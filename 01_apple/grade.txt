@@ -1,0 +1,8 @@
+Grading at Sun May 24 16:59:10 UTC 2020
+I expected to find a file called 'fruit.txt' but it did not exist
+(or was not a regular file)
+Here are the files that I can find:
+apple.txt
+README
+
+Overall Grade: FAILED
