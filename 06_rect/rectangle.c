@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 //I've provided "min" and "max" functions in
 //case they are useful to you
 int min (int a, int b) {
@@ -19,9 +20,10 @@ int max (int a, int b) {
 typedef struct rect {
   int x, y, width, height;
 } rectangle;
-  
+
+
 rectangle canonicalize(rectangle r) {
-  //WRITE THIS FUNCTION
+  //WRITE THIS FUNCTION  
   if(r.width < 0) {
     r.x = r.x + r.width;
     r.width = -r.width;
@@ -30,15 +32,42 @@ rectangle canonicalize(rectangle r) {
     r.y = r.height + r.y;
     r.height = -r.height;
   }
+  
   return r;
 }
+
+rectangle intersectionOld(rectangle r1, rectangle r2) {
+  // WRITE THIS FUNCTION
+  rectangle r1c = canonicalize(r1);
+  rectangle r2c = canonicalize(r2);
+  rectangle r;
+  r.x = max(r1c.x, r2c.x);
+  r.y = max(r1c.y, r2c.y);
+  //   r.width = (r1c.width, r2c.width);
+  //   r.height = (r1c.height, r2c.height);
+  return r;
+}
+
 rectangle intersection(rectangle r1, rectangle r2) {
-  //WRITE THIS FUNCTION
-  max(r1.x, r2.x);
-  max(r1.y, r2.y);
-  min(r1.width, r2.width);
-  min(r1.height, r2.height);
-  return r1;
+  rectangle ans;
+  rectangle r1c = canonicalize(r1);
+  rectangle r2c = canonicalize(r2);
+
+  // left: maximum of r1's left and r2's left
+  ans.x = max(r1c.x, r2c.x);
+  // bottom: maximum or r1's bottom and r2's bottom
+  ans.y = max(r1c.y, r2c.y);
+  // right: minimum of r1's right and r2's right
+  int right = min((r1c.x + r1c.width), (r2c.x + r2c.width));
+  ans.width = right - ans.x;
+  // top: minimum of r1's top and r2's top
+  int top = min((r1c.y + r1c.height), (r2c.y + r2c.height));
+  ans.height = top - ans.y;
+  if(ans.width < 0 || ans.height < 0) {
+    ans.width = 0;
+    ans.height = 0;
+  }
+  return ans;
 }
 
 //You should not need to modify any code below this line
