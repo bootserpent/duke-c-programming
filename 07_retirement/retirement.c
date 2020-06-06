@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #define EXIT_SUCCESS 0
 
-typedef struct _retire_info {
+struct _retire_info {
   int months;
   double contribution, rate_of_return;
-} retire_info;
-
+};
+typedef struct _retire_info retire_info;
 
 void retirement (int startAge,   //in months
 		 double initial, //initial savings in dollars
