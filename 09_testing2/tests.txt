@@ -13,5 +13,6 @@ s a x a p h o n e
 ^Q; // comment
 ht 0 0
 
-strcpy f_f__
+_____ _____
+\\\\\ \\\
 
