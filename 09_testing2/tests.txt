@@ -1,6 +1,13 @@
 aaaaa bbbbb
 aaaaa bbbbc
 aaabb bbbbc
+aabbb bbbbc
+abbbb bbbbc
+bbbbb bbbbc
+aaaaa bbbcc
+aaaaa bbccc
+aaaaa bcccc
+aaaaa ccccc
 aaaab cccdd
 aaaaa aaaaa
 mmmmh aaaaj
