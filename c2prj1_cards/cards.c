@@ -166,7 +166,7 @@ card_t card_from_num(unsigned c) {
   int value = c / 4;
   int suit = c % 4;
   temp.value = value;
-  assert(temp.value >= 8 && temp.value <= 59);
+  assert(temp.value >= 0 && temp.value <= 52);
   switch (suit) {
   case 0:
     temp.suit = SPADES;
