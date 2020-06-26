@@ -161,12 +161,13 @@ card_t card_from_letters(char value_let, char suit_let) {
 }
 
 card_t card_from_num(unsigned c) {
+
   card_t temp;
   c += 8;
   int value = c / 4;
   int suit = c % 4;
   temp.value = value;
-  assert(temp.value >= 0 && temp.value <= 52);
+  assert(temp.value >= 8 && temp.value <= 60);
   switch (suit) {
   case 0:
     temp.suit = SPADES;
