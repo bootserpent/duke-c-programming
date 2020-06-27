@@ -1,4 +1,4 @@
-Grading at Sat Jun 27 22:20:55 UTC 2020
+Grading at Sat Jun 27 22:26:45 UTC 2020
 Compiling cards.c
 Testing card_from_letters
 Passed
@@ -10,14 +10,16 @@ Testing card_from_num
 Passed
 Testing ranking_to_string
 In function ranking_to_string, buffer returned is STRAIGHT_FLUSHranking_to_string(STRAIGHT_FLUSH) resulted in STRAIGHT_FLUSH  (Correct)
-In function ranking_to_string, buffer returned is four of a kindranking_to_string(FOUR_OF_A_KIND) resulted in four of a kind (Incorrect)
-oh no, hit unexpected case 2In function ranking_to_string, buffer returned is oh no, hit expected caseranking_to_string(FULL_HOUSE) resulted in oh no, hit expected case (Incorrect)
-In function ranking_to_string, buffer returned is flushranking_to_string(FLUSH) resulted in flush (Incorrect)
-In function ranking_to_string, buffer returned is straightranking_to_string(STRAIGHT) resulted in straight (Incorrect)
-In function ranking_to_string, buffer returned is three of a kindranking_to_string(THREE_OF_A_KIND) resulted in three of a kind (Incorrect)
-In function ranking_to_string, buffer returned is two pairsranking_to_string(TWO_PAIR) resulted in two pairs (Incorrect)
-In function ranking_to_string, buffer returned is a pairranking_to_string(PAIR) resulted in a pair (Incorrect)
-In function ranking_to_string, buffer returned is nothingranking_to_string(NOTHING) resulted in nothing (Incorrect)
-Failed
+In function ranking_to_string, buffer returned is FOUR_OF_A_KINDranking_to_string(FOUR_OF_A_KIND) resulted in FOUR_OF_A_KIND  (Correct)
+In function ranking_to_string, buffer returned is FULL_HOUSEranking_to_string(FULL_HOUSE) resulted in FULL_HOUSE  (Correct)
+In function ranking_to_string, buffer returned is FLUSHranking_to_string(FLUSH) resulted in FLUSH  (Correct)
+In function ranking_to_string, buffer returned is STRAIGHTranking_to_string(STRAIGHT) resulted in STRAIGHT  (Correct)
+In function ranking_to_string, buffer returned is THREE_OF_A_KINDranking_to_string(THREE_OF_A_KIND) resulted in THREE_OF_A_KIND  (Correct)
+In function ranking_to_string, buffer returned is TWO_PAIRranking_to_string(TWO_PAIR) resulted in TWO_PAIR  (Correct)
+In function ranking_to_string, buffer returned is PAIRranking_to_string(PAIR) resulted in PAIR  (Correct)
+In function ranking_to_string, buffer returned is NOTHINGranking_to_string(NOTHING) resulted in NOTHING  (Correct)
+Passed
+Testing assert_card_valid
+Passed
 
-Overall Grade: FAILED
+Overall Grade: PASSED
