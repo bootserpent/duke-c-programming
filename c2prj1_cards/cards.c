@@ -24,31 +24,33 @@ const char * ranking_to_string(hand_ranking_t r) {
     strcpy(buffer, "STRAIGHT_FLUSH");
     break;
   case FOUR_OF_A_KIND:
-    strcpy(buffer, "four of a kind");
+    strcpy(buffer, "FOUR_OF_A_KIND");
+    break;
+  case FULL_HOUSE:
+    strcpy(buffer, "FULL_HOUSE");
     break;
   case FLUSH:
-    strcpy(buffer, "flush");
+    strcpy(buffer, "FLUSH");
     break;
   case STRAIGHT:
-    strcpy(buffer, "straight");
+    strcpy(buffer, "STRAIGHT");
     break;
   case THREE_OF_A_KIND:
-    strcpy(buffer, "three of a kind");
+    strcpy(buffer, "THREE_OF_A_KIND");
     break;
   case TWO_PAIR:
-    strcpy(buffer, "two pairs");
+    strcpy(buffer, "TWO_PAIR");
     break;
   case PAIR:
-    strcpy(buffer, "a pair");
+    strcpy(buffer, "PAIR");
     break;
   case NOTHING:
-    strcpy(buffer, "nothing");
+    strcpy(buffer, "NOTHING");
     break;
   default:
     printf("oh no, hit unexpected case %d", r);
     strcpy(buffer, "oh no, hit expected case");
   }
-
   printf("In function ranking_to_string, buffer returned is %s", buffer);
   return bufferptr;
 }
