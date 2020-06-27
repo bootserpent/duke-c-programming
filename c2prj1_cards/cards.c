@@ -21,7 +21,7 @@ const char * ranking_to_string(hand_ranking_t r) {
 
   switch (r) {
   case STRAIGHT_FLUSH:
-    strcpy(buffer, "straight flush");
+    strcpy(buffer, "STRAIGHT_FLUSH");
     break;
   case FOUR_OF_A_KIND:
     strcpy(buffer, "four of a kind");
