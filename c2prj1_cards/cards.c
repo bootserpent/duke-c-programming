@@ -107,8 +107,7 @@ char suit_letter(card_t c) {
 void print_card(card_t c) {
   char vl = value_letter(c);
   char sl = suit_letter(c);
-  printf("%c%c\n", vl, sl);
-
+  printf("%c%c", vl, sl);
 }
 
 card_t card_from_letters(char value_let, char suit_let) {
