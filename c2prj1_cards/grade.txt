@@ -1,4 +1,4 @@
-Grading at Sat Jun 27 22:15:21 UTC 2020
+Grading at Sat Jun 27 22:20:55 UTC 2020
 Compiling cards.c
 Testing card_from_letters
 Passed
@@ -9,7 +9,7 @@ Passed
 Testing card_from_num
 Passed
 Testing ranking_to_string
-In function ranking_to_string, buffer returned is straight flushranking_to_string(STRAIGHT_FLUSH) resulted in straight flush (Incorrect)
+In function ranking_to_string, buffer returned is STRAIGHT_FLUSHranking_to_string(STRAIGHT_FLUSH) resulted in STRAIGHT_FLUSH  (Correct)
 In function ranking_to_string, buffer returned is four of a kindranking_to_string(FOUR_OF_A_KIND) resulted in four of a kind (Incorrect)
 oh no, hit unexpected case 2In function ranking_to_string, buffer returned is oh no, hit expected caseranking_to_string(FULL_HOUSE) resulted in oh no, hit expected case (Incorrect)
 In function ranking_to_string, buffer returned is flushranking_to_string(FLUSH) resulted in flush (Incorrect)
