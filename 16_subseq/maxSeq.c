@@ -11,6 +11,9 @@ size_t maxSeq(int* array, size_t n) {
   if (n == 0) {
     return maxSeqLen;
   }
+  if (n == 1) {
+    return 1;
+  }
   size_t *seqArray;
   seqArray = (size_t*)malloc(n * sizeof(size_t));
   for (int i = 0; i < n; i++) {
