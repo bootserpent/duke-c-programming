@@ -4,6 +4,9 @@
 #define EXIT_SUCCESS 0
 
 void reverse(char* str) {
+  if (str == NULL) {
+    return;
+  }
   int len = strlen(str);
   if (len == 0 || len == 1) {
     return;
