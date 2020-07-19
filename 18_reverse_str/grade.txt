@@ -1,0 +1,14 @@
+Grading at Sun Jul 19 01:24:03 UTC 2020
+Attempting to compile  reverse.c
+reverse.c:5:0: error: "NULL" redefined [-Werror]
+ #define NULL 0
+ ^
+In file included from /usr/include/string.h:32:0,
+                 from reverse.c:3:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:406:0: note: this is the location of the previous definition
+ #define NULL ((void *)0)
+ ^
+cc1: all warnings being treated as errors
+The code did not compile!
+
+Overall Grade: F
