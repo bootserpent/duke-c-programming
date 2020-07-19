@@ -1,9 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define EXIT_SUCCESS 0
+#define NULL 0
 
-void reverse(char * str) {
-  //WRITE ME!
+void reverse(char* str) {
+  int len = strlen(str);
+  if (len == 0 || len == 1) {
+    return;
+  }
+  char* output = (char*)malloc(len + 1);
+  output[len] = '\0';
+  for (int i = 0; i < len; i++) {
+    output[i] = str[len - (i + 1)];
+  }
+  for (int i = 0; i < len; i++)
+    {
+      str[i] = output[i];
+    }
+
 }
 
 int main(void) {
