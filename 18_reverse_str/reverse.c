@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #define EXIT_SUCCESS 0
-#define NULL 0
 
 void reverse(char* str) {
   int len = strlen(str);
