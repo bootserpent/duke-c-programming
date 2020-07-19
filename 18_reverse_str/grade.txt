@@ -1,14 +1,20 @@
-Grading at Sun Jul 19 01:24:03 UTC 2020
+Grading at Sun Jul 19 01:29:18 UTC 2020
 Attempting to compile  reverse.c
-reverse.c:5:0: error: "NULL" redefined [-Werror]
- #define NULL 0
- ^
-In file included from /usr/include/string.h:32:0,
-                 from reverse.c:3:
-/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:406:0: note: this is the location of the previous definition
- #define NULL ((void *)0)
- ^
-cc1: all warnings being treated as errors
-The code did not compile!
+Your file matched the expected output
+Your output matched what we expected
+Removing your main() and replacing it with our own to run more tests...
+#################################################
+testcase2:
+ - Your program segfaulted.
+your code failed the testcase
+#################################################
+testcase3:
+Your file matched the expected output
+#################################################
+testcase4:
+Your file matched the expected output
+#################################################
+testcase5:
+Your file matched the expected output
 
-Overall Grade: F
+Overall Grade: C
