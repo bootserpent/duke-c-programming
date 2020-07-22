@@ -1,43 +1,13 @@
-Grading at Wed Jul 22 06:23:56 UTC 2020
+Grading at Wed Jul 22 18:02:45 UTC 2020
 Attempting to compile rotate.c
 Running testcase 1
-Line_11_did_not_match
-Line_12_did_not_match
-Line_13_did_not_match
-Line_14_did_not_match
-Line_15_did_not_match
-Line_16_did_not_match
-Line_17_did_not_match
-Line_18_did_not_match
-Line_19_did_not_match
-Line_20_did_not_match
-Your file did not match the expected ouput
-testcase1 failed, your output did not match with the answer
+Your file matched the expected output
+testcase1 passed
 Running testcase 1
-Line_11_did_not_match
-Line_12_did_not_match
-Line_13_did_not_match
-Line_14_did_not_match
-Line_15_did_not_match
-Line_16_did_not_match
-Line_17_did_not_match
-Line_18_did_not_match
-Line_19_did_not_match
-Line_20_did_not_match
-Your file did not match the expected ouput
-testcase1 failed, your output did not match with the answer
+Your file matched the expected output
+testcase1 passed
 Running testcase 1
-Line_11_did_not_match
-Line_12_did_not_match
-Line_13_did_not_match
-Line_14_did_not_match
-Line_15_did_not_match
-Line_16_did_not_match
-Line_17_did_not_match
-Line_18_did_not_match
-Line_19_did_not_match
-Line_20_did_not_match
-Your file did not match the expected ouput
-testcase1 failed, your output did not match with the answer
+Your file matched the expected output
+testcase1 passed
 
-Overall Grade: F
+Overall Grade: A
