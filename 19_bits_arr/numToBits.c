@@ -42,7 +42,6 @@ void numToBits(uint32_t* nums, int nNums, int* bits, int nBits) {
   }
   int bitPos = 0;
   for (int i = 0; i < nNums; i++) {
-    printf("processing %d\n", nums[i]);
     for (int j = 31; j >= 0; j--) {
       int bit = getNthBit(nums[i], j);
       bits[bitPos] = bit;
