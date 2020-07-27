@@ -5,9 +5,6 @@ unsigned power(unsigned x, unsigned y) {
   if (x == 0 && y == 1) {
     return 0;
   }
-  if (y < 0) {
-    return 0;
-  }
   // base case
   if (y == 0) {
     return 1;
