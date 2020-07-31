@@ -8,6 +8,7 @@ struct deck_tag {
 };
 typedef struct deck_tag deck_t;
 
+deck_t makeFullDeck();
 void print_hand(deck_t * hand);
 int deck_contains(deck_t * d, card_t c) ;
 void shuffle(deck_t * d);
