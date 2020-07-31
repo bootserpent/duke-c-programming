@@ -1,0 +1,22 @@
+Grading at Fri Jul 31 06:40:51 UTC 2020
+Compiling deck.c
+Compiling cards.c
+cards.c: In function ‘ranking_to_string’:
+cards.c:55:10: error: function returns address of local variable [-Werror=return-local-addr]
+   return bufferptr;
+          ^
+cards.c:18:8: note: declared here
+   char buffer[30];
+        ^
+cards.c: In function ‘suit_letter’:
+cards.c:106:10: error: ‘x’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   return x;
+          ^
+cards.c: In function ‘print_card’:
+cards.c:89:8: error: ‘x’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   char x;
+        ^
+cc1: all warnings being treated as errors
+Could not compile your cards.c!
+
+Overall Grade: FAILED
