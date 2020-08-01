@@ -35,14 +35,16 @@ void shuffle(deck_t* d) {
       randCard = rand() % count;
     }
     shuffledCards[idx] = *(d->cards[randCard]);
+    // free(d->cards[randCard]);
     d->cards[randCard] = NULL;
   }
-  // printf("\n");
+  /*printf("\n");*/
   for (int i = 0; i < count; i++) {
     d->cards[i] = &shuffledCards[i];
 
   }
   // print_hand(d);
+
 }
 
 deck_t makeFullDeck() {
@@ -52,9 +54,14 @@ deck_t makeFullDeck() {
   d.cards = (card_t**)malloc(d.n_cards * sizeof(card_t*));
   for (int j = 0; j < d.n_cards; j++) {
     card_t* card = (card_t*)malloc(sizeof(card_t));
-    if (card)
+    if (card) {
       *card = card_from_num(j);
-    d.cards[j] = card;
+      d.cards[j] = card;
+    }
+    else {
+      printf("memory alloc failed\n");
+    }
+
   }
   return d;
 }
