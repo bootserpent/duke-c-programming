@@ -4,6 +4,7 @@
 #include <string.h>
 #include "deck.h"
 
+
 void print_hand(deck_t* hand) {
   int count = hand->n_cards;
   for (int i = 0; i < count; i++) {
@@ -27,7 +28,21 @@ int deck_contains(deck_t* d, card_t c) {
 
 void shuffle(deck_t* d) {
   int count = d->n_cards;
-  card_t *shuffledCards = (card_t*)malloc(count * sizeof(card_t));
+
+  int randCardIndex;
+  for (int idx = 0; idx < count; idx++) {
+    randCardIndex = rand() % count;
+    //swapping card at idx with card randCardIndexs
+    card_t* temp = d->cards[randCardIndex];
+    d->cards[randCardIndex] = d->cards[idx];
+    d->cards[idx] = temp;
+  }
+  /*printf("\n");
+    print_hand(d);*/
+}
+void shuffle_bak(deck_t* d) {
+  int count = d->n_cards;
+  card_t* shuffledCards = (card_t*)malloc(count * sizeof(card_t));
   int randCard;
   for (int idx = 0; idx < count; idx++) {
     randCard = rand() % count;
@@ -35,7 +50,7 @@ void shuffle(deck_t* d) {
       randCard = rand() % count;
     }
     shuffledCards[idx] = *(d->cards[randCard]);
-    // free(d->cards[randCard]);
+    //free(d->cards[randCard]);
     d->cards[randCard] = NULL;
   }
   /*printf("\n");*/
