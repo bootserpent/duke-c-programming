@@ -1,0 +1,573 @@
+Grading at Sun Aug  9 19:03:58 UTC 2020
+Compiling your code
+rm -f test poker cards.o my-test-main.o *~
+cc -ggdb3 -Wall -Werror -pedantic -std=gnu99   -c -o deck.o deck.c
+cc -ggdb3 -Wall -Werror -pedantic -std=gnu99   -c -o eval.o eval.c
+cc -ggdb3 -Wall -Werror -pedantic -std=gnu99   -c -o cards.o cards.c
+gcc -o test-eval -ggdb3 deck.o deck-c4.o eval-c4.o eval.o test-eval.o cards.o input.o future.o
+Testcase 1: Trying hands with nothing
+Valgrind returned an error status
+==201== Memcheck, a memory error detector
+==201== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==201== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==201== Command: ./test-eval inp.1.txt
+==201== Parent PID: 200
+==201== 
+==201== Conditional jump or move depends on uninitialised value(s)
+==201==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==201==    by 0x4E8F898: printf (printf.c:33)
+==201==    by 0x4029E4: describe_hand (test-eval.c:69)
+==201==    by 0x402BF3: main (test-eval.c:116)
+==201== 
+==201== Conditional jump or move depends on uninitialised value(s)
+==201==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==201==    by 0x4E8F898: printf (printf.c:33)
+==201==    by 0x4029E4: describe_hand (test-eval.c:69)
+==201==    by 0x402C13: main (test-eval.c:119)
+==201== 
+==201== Syscall param write(buf) points to uninitialised byte(s)
+==201==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==201==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==201==    by 0x4EB4408: new_do_write (fileops.c:518)
+==201==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==201==    by 0x4EB6195: _IO_flush_all_lockp (genops.c:786)
+==201==    by 0x4EB6329: _IO_cleanup (genops.c:951)
+==201==    by 0x4E73F9A: __run_exit_handlers (exit.c:95)
+==201==    by 0x4E74044: exit (exit.c:104)
+==201==    by 0x4E5A836: (below main) (libc-start.c:325)
+==201==  Address 0x5205d60 is 208 bytes inside a block of size 4,096 alloc'd
+==201==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==201==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==201==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==201==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==201==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==201==    by 0x4EA9737: puts (ioputs.c:40)
+==201==    by 0x402BDD: main (test-eval.c:114)
+==201== 
+==201== 
+==201== HEAP SUMMARY:
+==201==     in use at exit: 0 bytes in 0 blocks
+==201==   total heap usage: 278 allocs, 278 frees, 13,728 bytes allocated
+==201== 
+==201== All heap blocks were freed -- no leaks are possible
+==201== 
+==201== For counts of detected and suppressed errors, rerun with: -v
+==201== Use --track-origins=yes to see where uninitialised values come from
+==201== ERROR SUMMARY: 81 errors from 3 contexts (suppressed: 0 from 0)
+Testcase 2: Trying hands with pairs
+Valgrind returned an error status
+==206== Memcheck, a memory error detector
+==206== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==206== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==206== Command: ./test-eval inp.2.txt
+==206== Parent PID: 205
+==206== 
+==206== Conditional jump or move depends on uninitialised value(s)
+==206==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==206==    by 0x4E8F898: printf (printf.c:33)
+==206==    by 0x4029E4: describe_hand (test-eval.c:69)
+==206==    by 0x402BF3: main (test-eval.c:116)
+==206== 
+==206== Conditional jump or move depends on uninitialised value(s)
+==206==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==206==    by 0x4E8F898: printf (printf.c:33)
+==206==    by 0x4029E4: describe_hand (test-eval.c:69)
+==206==    by 0x402C13: main (test-eval.c:119)
+==206== 
+==206== Syscall param write(buf) points to uninitialised byte(s)
+==206==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==206==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==206==    by 0x4EB4408: new_do_write (fileops.c:518)
+==206==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==206==    by 0x4EB6195: _IO_flush_all_lockp (genops.c:786)
+==206==    by 0x4EB6329: _IO_cleanup (genops.c:951)
+==206==    by 0x4E73F9A: __run_exit_handlers (exit.c:95)
+==206==    by 0x4E74044: exit (exit.c:104)
+==206==    by 0x4E5A836: (below main) (libc-start.c:325)
+==206==  Address 0x5205c9d is 205 bytes inside a block of size 4,096 alloc'd
+==206==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==206==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==206==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==206==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==206==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==206==    by 0x4EA9737: puts (ioputs.c:40)
+==206==    by 0x402BDD: main (test-eval.c:114)
+==206== 
+==206== 
+==206== HEAP SUMMARY:
+==206==     in use at exit: 0 bytes in 0 blocks
+==206==   total heap usage: 232 allocs, 232 frees, 13,028 bytes allocated
+==206== 
+==206== All heap blocks were freed -- no leaks are possible
+==206== 
+==206== For counts of detected and suppressed errors, rerun with: -v
+==206== Use --track-origins=yes to see where uninitialised values come from
+==206== ERROR SUMMARY: 41 errors from 3 contexts (suppressed: 0 from 0)
+Testcase 3: Trying hands with 2 pairs
+Valgrind returned an error status
+==211== Memcheck, a memory error detector
+==211== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==211== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==211== Command: ./test-eval inp.3.txt
+==211== Parent PID: 210
+==211== 
+==211== Conditional jump or move depends on uninitialised value(s)
+==211==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==211==    by 0x4E8F898: printf (printf.c:33)
+==211==    by 0x4029E4: describe_hand (test-eval.c:69)
+==211==    by 0x402BF3: main (test-eval.c:116)
+==211== 
+==211== Conditional jump or move depends on uninitialised value(s)
+==211==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==211==    by 0x4E8F898: printf (printf.c:33)
+==211==    by 0x4029E4: describe_hand (test-eval.c:69)
+==211==    by 0x402C13: main (test-eval.c:119)
+==211== 
+==211== Syscall param write(buf) points to uninitialised byte(s)
+==211==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==211==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==211==    by 0x4EB4408: new_do_write (fileops.c:518)
+==211==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==211==    by 0x4EB347C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==211==    by 0x4E8792C: vfprintf (vfprintf.c:1663)
+==211==    by 0x4E8F898: printf (printf.c:33)
+==211==    by 0x4029A6: describe_hand (test-eval.c:62)
+==211==    by 0x402C13: main (test-eval.c:119)
+==211==  Address 0x5205bf1 is 225 bytes inside a block of size 4,096 alloc'd
+==211==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==211==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==211==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==211==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==211==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==211==    by 0x4EA9737: puts (ioputs.c:40)
+==211==    by 0x402BDD: main (test-eval.c:114)
+==211== 
+==211== Syscall param write(buf) points to uninitialised byte(s)
+==211==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==211==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==211==    by 0x4EB4408: new_do_write (fileops.c:518)
+==211==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==211==    by 0x4EB6195: _IO_flush_all_lockp (genops.c:786)
+==211==    by 0x4EB6329: _IO_cleanup (genops.c:951)
+==211==    by 0x4E73F9A: __run_exit_handlers (exit.c:95)
+==211==    by 0x4E74044: exit (exit.c:104)
+==211==    by 0x4E5A836: (below main) (libc-start.c:325)
+==211==  Address 0x5205b6a is 90 bytes inside a block of size 4,096 alloc'd
+==211==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==211==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==211==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==211==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==211==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==211==    by 0x4EA9737: puts (ioputs.c:40)
+==211==    by 0x402BDD: main (test-eval.c:114)
+==211== 
+==211== 
+==211== HEAP SUMMARY:
+==211==     in use at exit: 0 bytes in 0 blocks
+==211==   total heap usage: 544 allocs, 544 frees, 18,344 bytes allocated
+==211== 
+==211== All heap blocks were freed -- no leaks are possible
+==211== 
+==211== For counts of detected and suppressed errors, rerun with: -v
+==211== Use --track-origins=yes to see where uninitialised values come from
+==211== ERROR SUMMARY: 182 errors from 4 contexts (suppressed: 0 from 0)
+Testcase 4: Trying hands with 3 of a kind
+Valgrind returned an error status
+==216== Memcheck, a memory error detector
+==216== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==216== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==216== Command: ./test-eval inp.4.txt
+==216== Parent PID: 215
+==216== 
+==216== Conditional jump or move depends on uninitialised value(s)
+==216==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==216==    by 0x4E8F898: printf (printf.c:33)
+==216==    by 0x4029E4: describe_hand (test-eval.c:69)
+==216==    by 0x402BF3: main (test-eval.c:116)
+==216== 
+==216== Conditional jump or move depends on uninitialised value(s)
+==216==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==216==    by 0x4E8F898: printf (printf.c:33)
+==216==    by 0x4029E4: describe_hand (test-eval.c:69)
+==216==    by 0x402C13: main (test-eval.c:119)
+==216== 
+==216== Syscall param write(buf) points to uninitialised byte(s)
+==216==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==216==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==216==    by 0x4EB4408: new_do_write (fileops.c:518)
+==216==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==216==    by 0x4EB6195: _IO_flush_all_lockp (genops.c:786)
+==216==    by 0x4EB6329: _IO_cleanup (genops.c:951)
+==216==    by 0x4E73F9A: __run_exit_handlers (exit.c:95)
+==216==    by 0x4E74044: exit (exit.c:104)
+==216==    by 0x4E5A836: (below main) (libc-start.c:325)
+==216==  Address 0x5205d68 is 216 bytes inside a block of size 4,096 alloc'd
+==216==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==216==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==216==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==216==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==216==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==216==    by 0x4EA9737: puts (ioputs.c:40)
+==216==    by 0x402BDD: main (test-eval.c:114)
+==216== 
+==216== 
+==216== HEAP SUMMARY:
+==216==     in use at exit: 0 bytes in 0 blocks
+==216==   total heap usage: 352 allocs, 352 frees, 15,296 bytes allocated
+==216== 
+==216== All heap blocks were freed -- no leaks are possible
+==216== 
+==216== For counts of detected and suppressed errors, rerun with: -v
+==216== Use --track-origins=yes to see where uninitialised values come from
+==216== ERROR SUMMARY: 193 errors from 3 contexts (suppressed: 0 from 0)
+Testcase 5: Trying hands with straights
+Valgrind returned an error status
+==221== Memcheck, a memory error detector
+==221== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==221== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==221== Command: ./test-eval inp.5.txt
+==221== Parent PID: 220
+==221== 
+==221== Conditional jump or move depends on uninitialised value(s)
+==221==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==221==    by 0x4E8F898: printf (printf.c:33)
+==221==    by 0x4029E4: describe_hand (test-eval.c:69)
+==221==    by 0x402BF3: main (test-eval.c:116)
+==221== 
+==221== Conditional jump or move depends on uninitialised value(s)
+==221==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==221==    by 0x4E8F898: printf (printf.c:33)
+==221==    by 0x4029E4: describe_hand (test-eval.c:69)
+==221==    by 0x402C13: main (test-eval.c:119)
+==221== 
+==221== Syscall param write(buf) points to uninitialised byte(s)
+==221==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==221==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==221==    by 0x4EB4408: new_do_write (fileops.c:518)
+==221==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==221==    by 0x4EB6195: _IO_flush_all_lockp (genops.c:786)
+==221==    by 0x4EB6329: _IO_cleanup (genops.c:951)
+==221==    by 0x4E73F9A: __run_exit_handlers (exit.c:95)
+==221==    by 0x4E74044: exit (exit.c:104)
+==221==    by 0x4E5A836: (below main) (libc-start.c:325)
+==221==  Address 0x5205bf6 is 230 bytes inside a block of size 4,096 alloc'd
+==221==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==221==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==221==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==221==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==221==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==221==    by 0x4EA9737: puts (ioputs.c:40)
+==221==    by 0x402BDD: main (test-eval.c:114)
+==221== 
+==221== 
+==221== HEAP SUMMARY:
+==221==     in use at exit: 0 bytes in 0 blocks
+==221==   total heap usage: 360 allocs, 360 frees, 15,704 bytes allocated
+==221== 
+==221== All heap blocks were freed -- no leaks are possible
+==221== 
+==221== For counts of detected and suppressed errors, rerun with: -v
+==221== Use --track-origins=yes to see where uninitialised values come from
+==221== ERROR SUMMARY: 107 errors from 3 contexts (suppressed: 0 from 0)
+Testcase 6: Trying hands with flushes
+Valgrind returned an error status
+==226== Memcheck, a memory error detector
+==226== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==226== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==226== Command: ./test-eval inp.6.txt
+==226== Parent PID: 225
+==226== 
+==226== Conditional jump or move depends on uninitialised value(s)
+==226==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==226==    by 0x4E8F898: printf (printf.c:33)
+==226==    by 0x4029E4: describe_hand (test-eval.c:69)
+==226==    by 0x402BF3: main (test-eval.c:116)
+==226== 
+==226== Conditional jump or move depends on uninitialised value(s)
+==226==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==226==    by 0x4E8F898: printf (printf.c:33)
+==226==    by 0x4029E4: describe_hand (test-eval.c:69)
+==226==    by 0x402C13: main (test-eval.c:119)
+==226== 
+==226== Syscall param write(buf) points to uninitialised byte(s)
+==226==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==226==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==226==    by 0x4EB4408: new_do_write (fileops.c:518)
+==226==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==226==    by 0x4EB347C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==226==    by 0x4EA9737: puts (ioputs.c:40)
+==226==    by 0x402C75: main (test-eval.c:125)
+==226==  Address 0x5205d7c is 236 bytes inside a block of size 4,096 alloc'd
+==226==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==226==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==226==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==226==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==226==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==226==    by 0x4EA9737: puts (ioputs.c:40)
+==226==    by 0x402BDD: main (test-eval.c:114)
+==226== 
+==226== Syscall param write(buf) points to uninitialised byte(s)
+==226==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==226==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==226==    by 0x4EB4408: new_do_write (fileops.c:518)
+==226==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==226==    by 0x4EB6195: _IO_flush_all_lockp (genops.c:786)
+==226==    by 0x4EB6329: _IO_cleanup (genops.c:951)
+==226==    by 0x4E73F9A: __run_exit_handlers (exit.c:95)
+==226==    by 0x4E74044: exit (exit.c:104)
+==226==    by 0x4E5A836: (below main) (libc-start.c:325)
+==226==  Address 0x5205d93 is 259 bytes inside a block of size 4,096 alloc'd
+==226==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==226==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==226==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==226==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==226==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==226==    by 0x4EA9737: puts (ioputs.c:40)
+==226==    by 0x402BDD: main (test-eval.c:114)
+==226== 
+==226== 
+==226== HEAP SUMMARY:
+==226==     in use at exit: 0 bytes in 0 blocks
+==226==   total heap usage: 898 allocs, 898 frees, 25,784 bytes allocated
+==226== 
+==226== All heap blocks were freed -- no leaks are possible
+==226== 
+==226== For counts of detected and suppressed errors, rerun with: -v
+==226== Use --track-origins=yes to see where uninitialised values come from
+==226== ERROR SUMMARY: 183 errors from 4 contexts (suppressed: 0 from 0)
+Testcase 7: Trying hands with full houses
+Valgrind returned an error status
+==231== Memcheck, a memory error detector
+==231== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==231== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==231== Command: ./test-eval inp.7.txt
+==231== Parent PID: 230
+==231== 
+==231== Conditional jump or move depends on uninitialised value(s)
+==231==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==231==    by 0x4E8F898: printf (printf.c:33)
+==231==    by 0x4029E4: describe_hand (test-eval.c:69)
+==231==    by 0x402BF3: main (test-eval.c:116)
+==231== 
+==231== Conditional jump or move depends on uninitialised value(s)
+==231==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==231==    by 0x4E8F898: printf (printf.c:33)
+==231==    by 0x4029E4: describe_hand (test-eval.c:69)
+==231==    by 0x402C13: main (test-eval.c:119)
+==231== 
+==231== Syscall param write(buf) points to uninitialised byte(s)
+==231==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==231==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==231==    by 0x4EB4408: new_do_write (fileops.c:518)
+==231==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==231==    by 0x4EB347C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==231==    by 0x4E87240: vfprintf (vfprintf.c:1320)
+==231==    by 0x4E8F898: printf (printf.c:33)
+==231==    by 0x402966: describe_hand (test-eval.c:59)
+==231==    by 0x402C13: main (test-eval.c:119)
+==231==  Address 0x5205f17 is 231 bytes inside a block of size 4,096 alloc'd
+==231==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==231==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==231==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==231==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==231==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==231==    by 0x4EA9737: puts (ioputs.c:40)
+==231==    by 0x402BDD: main (test-eval.c:114)
+==231== 
+==231== Syscall param write(buf) points to uninitialised byte(s)
+==231==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==231==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==231==    by 0x4EB4408: new_do_write (fileops.c:518)
+==231==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==231==    by 0x4EB6195: _IO_flush_all_lockp (genops.c:786)
+==231==    by 0x4EB6329: _IO_cleanup (genops.c:951)
+==231==    by 0x4E73F9A: __run_exit_handlers (exit.c:95)
+==231==    by 0x4E74044: exit (exit.c:104)
+==231==    by 0x4E5A836: (below main) (libc-start.c:325)
+==231==  Address 0x5205ee4 is 180 bytes inside a block of size 4,096 alloc'd
+==231==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==231==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==231==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==231==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==231==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==231==    by 0x4EA9737: puts (ioputs.c:40)
+==231==    by 0x402BDD: main (test-eval.c:114)
+==231== 
+==231== 
+==231== HEAP SUMMARY:
+==231==     in use at exit: 0 bytes in 0 blocks
+==231==   total heap usage: 636 allocs, 636 frees, 21,404 bytes allocated
+==231== 
+==231== All heap blocks were freed -- no leaks are possible
+==231== 
+==231== For counts of detected and suppressed errors, rerun with: -v
+==231== Use --track-origins=yes to see where uninitialised values come from
+==231== ERROR SUMMARY: 222 errors from 4 contexts (suppressed: 0 from 0)
+Testcase 8: Trying hands with 4 of a kind
+Valgrind returned an error status
+==236== Memcheck, a memory error detector
+==236== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==236== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==236== Command: ./test-eval inp.8.txt
+==236== Parent PID: 235
+==236== 
+==236== Conditional jump or move depends on uninitialised value(s)
+==236==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==236==    by 0x4E8F898: printf (printf.c:33)
+==236==    by 0x4029E4: describe_hand (test-eval.c:69)
+==236==    by 0x402BF3: main (test-eval.c:116)
+==236== 
+==236== Conditional jump or move depends on uninitialised value(s)
+==236==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==236==    by 0x4E8F898: printf (printf.c:33)
+==236==    by 0x4029E4: describe_hand (test-eval.c:69)
+==236==    by 0x402C13: main (test-eval.c:119)
+==236== 
+==236== Syscall param write(buf) points to uninitialised byte(s)
+==236==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==236==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==236==    by 0x4EB4408: new_do_write (fileops.c:518)
+==236==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==236==    by 0x4EB6195: _IO_flush_all_lockp (genops.c:786)
+==236==    by 0x4EB6329: _IO_cleanup (genops.c:951)
+==236==    by 0x4E73F9A: __run_exit_handlers (exit.c:95)
+==236==    by 0x4E74044: exit (exit.c:104)
+==236==    by 0x4E5A836: (below main) (libc-start.c:325)
+==236==  Address 0x5205d67 is 215 bytes inside a block of size 4,096 alloc'd
+==236==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==236==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==236==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==236==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==236==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==236==    by 0x4EA9737: puts (ioputs.c:40)
+==236==    by 0x402BDD: main (test-eval.c:114)
+==236== 
+==236== 
+==236== HEAP SUMMARY:
+==236==     in use at exit: 0 bytes in 0 blocks
+==236==   total heap usage: 352 allocs, 352 frees, 15,296 bytes allocated
+==236== 
+==236== All heap blocks were freed -- no leaks are possible
+==236== 
+==236== For counts of detected and suppressed errors, rerun with: -v
+==236== Use --track-origins=yes to see where uninitialised values come from
+==236== ERROR SUMMARY: 181 errors from 3 contexts (suppressed: 0 from 0)
+Testcase 9: Trying hands with straight flushes
+Valgrind returned an error status
+==241== Memcheck, a memory error detector
+==241== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==241== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==241== Command: ./test-eval inp.9.txt
+==241== Parent PID: 240
+==241== 
+==241== Conditional jump or move depends on uninitialised value(s)
+==241==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==241==    by 0x4E8F898: printf (printf.c:33)
+==241==    by 0x4029E4: describe_hand (test-eval.c:69)
+==241==    by 0x402BF3: main (test-eval.c:116)
+==241== 
+==241== Conditional jump or move depends on uninitialised value(s)
+==241==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==241==    by 0x4E8F898: printf (printf.c:33)
+==241==    by 0x4029E4: describe_hand (test-eval.c:69)
+==241==    by 0x402C13: main (test-eval.c:119)
+==241== 
+==241== Syscall param write(buf) points to uninitialised byte(s)
+==241==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==241==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==241==    by 0x4EB4408: new_do_write (fileops.c:518)
+==241==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==241==    by 0x4EB6195: _IO_flush_all_lockp (genops.c:786)
+==241==    by 0x4EB6329: _IO_cleanup (genops.c:951)
+==241==    by 0x4E73F9A: __run_exit_handlers (exit.c:95)
+==241==    by 0x4E74044: exit (exit.c:104)
+==241==    by 0x4E5A836: (below main) (libc-start.c:325)
+==241==  Address 0x5205c09 is 249 bytes inside a block of size 4,096 alloc'd
+==241==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==241==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==241==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==241==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==241==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==241==    by 0x4EA9737: puts (ioputs.c:40)
+==241==    by 0x402BDD: main (test-eval.c:114)
+==241== 
+==241== 
+==241== HEAP SUMMARY:
+==241==     in use at exit: 0 bytes in 0 blocks
+==241==   total heap usage: 278 allocs, 278 frees, 13,920 bytes allocated
+==241== 
+==241== All heap blocks were freed -- no leaks are possible
+==241== 
+==241== For counts of detected and suppressed errors, rerun with: -v
+==241== Use --track-origins=yes to see where uninitialised values come from
+==241== ERROR SUMMARY: 133 errors from 3 contexts (suppressed: 0 from 0)
+Testcase 10: Trying each type of hand ranking
+Valgrind returned an error status
+==246== Memcheck, a memory error detector
+==246== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==246== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==246== Command: ./test-eval inp.10.txt
+==246== Parent PID: 245
+==246== 
+==246== Conditional jump or move depends on uninitialised value(s)
+==246==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==246==    by 0x4E8F898: printf (printf.c:33)
+==246==    by 0x4029E4: describe_hand (test-eval.c:69)
+==246==    by 0x402BF3: main (test-eval.c:116)
+==246== 
+==246== Conditional jump or move depends on uninitialised value(s)
+==246==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==246==    by 0x4E8F898: printf (printf.c:33)
+==246==    by 0x4029E4: describe_hand (test-eval.c:69)
+==246==    by 0x402C13: main (test-eval.c:119)
+==246== 
+==246== Syscall param write(buf) points to uninitialised byte(s)
+==246==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==246==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==246==    by 0x4EB4408: new_do_write (fileops.c:518)
+==246==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==246==    by 0x4EB347C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==246==    by 0x4E8792C: vfprintf (vfprintf.c:1663)
+==246==    by 0x4E8F898: printf (printf.c:33)
+==246==    by 0x402966: describe_hand (test-eval.c:59)
+==246==    by 0x402C13: main (test-eval.c:119)
+==246==  Address 0x5205d7c is 236 bytes inside a block of size 4,096 alloc'd
+==246==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==246==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==246==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==246==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==246==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==246==    by 0x4EA9737: puts (ioputs.c:40)
+==246==    by 0x402BDD: main (test-eval.c:114)
+==246== 
+==246== Syscall param write(buf) points to uninitialised byte(s)
+==246==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==246==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==246==    by 0x4EB4408: new_do_write (fileops.c:518)
+==246==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==246==    by 0x4EB6195: _IO_flush_all_lockp (genops.c:786)
+==246==    by 0x4EB6329: _IO_cleanup (genops.c:951)
+==246==    by 0x4E73F9A: __run_exit_handlers (exit.c:95)
+==246==    by 0x4E74044: exit (exit.c:104)
+==246==    by 0x4E5A836: (below main) (libc-start.c:325)
+==246==  Address 0x5205cb3 is 35 bytes inside a block of size 4,096 alloc'd
+==246==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==246==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==246==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==246==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==246==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==246==    by 0x4EA9737: puts (ioputs.c:40)
+==246==    by 0x402BDD: main (test-eval.c:114)
+==246== 
+==246== 
+==246== HEAP SUMMARY:
+==246==     in use at exit: 0 bytes in 0 blocks
+==246==   total heap usage: 3,988 allocs, 3,988 frees, 80,704 bytes allocated
+==246== 
+==246== All heap blocks were freed -- no leaks are possible
+==246== 
+==246== For counts of detected and suppressed errors, rerun with: -v
+==246== Use --track-origins=yes to see where uninitialised values come from
+==246== ERROR SUMMARY: 1515 errors from 4 contexts (suppressed: 0 from 0)
+
+Overall Grade: F
