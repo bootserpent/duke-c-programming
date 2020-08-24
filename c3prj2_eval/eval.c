@@ -105,7 +105,7 @@ int is_straight_at(deck_t* hand, size_t index, suit_t fs) {
   for (unsigned i = index + 1; i < hand->n_cards; i++) {
     card_t currentCard = *(hand->cards)[i];
     if (fs != NUM_SUITS) {
-      if (currentCard.suit != fs) {
+      if (currentCard.suit != fs || comparisonCard.suit != fs) {
 	return 0;
       }
     }
