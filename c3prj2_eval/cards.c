@@ -48,7 +48,7 @@ const char* ranking_to_string(hand_ranking_t r) {
     printf("oh no, hit unexpected case %d", r);
     strcpy(bufferptr, "oh no, hit expected case");
   }
-  printf("In function ranking_to_string, buffer returned is %s", bufferptr);
+  // printf("In function ranking_to_string, buffer returned is %s", bufferptr);
   return bufferptr;
 }
 
