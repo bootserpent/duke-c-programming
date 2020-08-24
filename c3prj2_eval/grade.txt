@@ -1,4 +1,4 @@
-Grading at Mon Aug 24 04:02:42 UTC 2020
+Grading at Mon Aug 24 04:07:28 UTC 2020
 Compiling your code
 rm -f test poker cards.o my-test-main.o *~
 cc -ggdb3 -Wall -Werror -pedantic -std=gnu99   -c -o deck.o deck.c
@@ -7,18 +7,8 @@ cc -ggdb3 -Wall -Werror -pedantic -std=gnu99   -c -o cards.o cards.c
 gcc -o test-eval -Wall -ggdb3 deck.o deck-c4.o eval-c4.o eval.o test-eval.o cards.o input.o future.o
 Testcase 1: Trying hands with nothing
  Checking the output 
-Line_7_did_not_match
-Line_15_did_not_match
-Line_27_did_not_match
-Line_35_did_not_match
 Line_39_did_not_match
-Line_47_did_not_match
-Line_55_did_not_match
-Line_67_did_not_match
-Line_75_did_not_match
 Line_79_did_not_match
-Line_87_did_not_match
-Line_95_did_not_match
 Line_99_did_not_match
 Your file did not match the expected ouput
  - Output did not match, testcase failed
@@ -28,7 +18,7 @@ As Qd 9h 7c 3d 2s 						As Qd 9h 7c 3d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 7c 3d 			 - 5 cards used for hand: As Qd 9h 7c 3d 
 Hand 2:								Hand 2:
 --------							--------
@@ -36,7 +26,7 @@ Kc Js 7h 6c 4d 2h 						Kc Js 7h 6c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kc Js 7h 6c 4d 			 - 5 cards used for hand: Kc Js 7h 6c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -48,7 +38,7 @@ As Qd 9h 7c 3d 2s 						As Qd 9h 7c 3d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 7c 3d 			 - 5 cards used for hand: As Qd 9h 7c 3d 
 Hand 2:								Hand 2:
 --------							--------
@@ -56,7 +46,7 @@ As Qd 9h 8c 4d 2s 						As Qd 9h 8c 4d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 8c 4d 			 - 5 cards used for hand: As Qd 9h 8c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -68,7 +58,7 @@ Kc Js 7h 6c 4d 2h 						Kc Js 7h 6c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kc Js 7h 6c 4d 			 - 5 cards used for hand: Kc Js 7h 6c 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -76,7 +66,7 @@ Kh Jd 6s 5c 4d 2h 						Kh Jd 6s 5c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kh Jd 6s 5c 4d 			 - 5 cards used for hand: Kh Jd 6s 5c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -88,7 +78,7 @@ Hand 1:								Hand 1:
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value 9)	 - The most of a kind is 1 of a kind (at index 0 / value 9)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: 9s 8s 7s 6s 2c 			 - 5 cards used for hand: 9s 8s 7s 6s 2c 
 Hand 2:								Hand 2:
 --------							--------
@@ -96,7 +86,7 @@ As 9h 8c 7d 6d 							As 9h 8c 7d 6d
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As 9h 8c 7d 6d 			 - 5 cards used for hand: As 9h 8c 7d 6d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -108,7 +98,7 @@ As Qs 9s 6d 4s 							As Qs 9s 6d 4s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qs 9s 6d 4s 			 - 5 cards used for hand: As Qs 9s 6d 4s 
 Hand 2:								Hand 2:
 --------							--------
@@ -116,7 +106,7 @@ Ac Kd Qh 3s 2s 							Ac Kd Qh 3s 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Ac Kd Qh 3s 2s 			 - 5 cards used for hand: Ac Kd Qh 3s 2s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -125,29 +115,21 @@ Hand 2 wins!						      |	Hand 1 wins!
 Testcase 2: Trying hands with pairs
  Checking the output 
 Line_3_did_not_match
-Line_7_did_not_match
 Line_8_did_not_match
 Line_11_did_not_match
-Line_15_did_not_match
 Line_16_did_not_match
 Line_23_did_not_match
-Line_27_did_not_match
 Line_28_did_not_match
 Line_31_did_not_match
-Line_35_did_not_match
 Line_36_did_not_match
 Line_39_did_not_match
 Line_43_did_not_match
-Line_47_did_not_match
 Line_48_did_not_match
 Line_51_did_not_match
-Line_55_did_not_match
 Line_56_did_not_match
 Line_63_did_not_match
-Line_67_did_not_match
 Line_68_did_not_match
 Line_71_did_not_match
-Line_75_did_not_match
 Line_76_did_not_match
 Line_79_did_not_match
 Your file did not match the expected ouput
@@ -158,7 +140,7 @@ Ac As Kh 9d 8c 3h 					      |	As Ac Kh 9d 8c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ac As Kh 9d 8c 		      |	 - 5 cards used for hand: As Ac Kh 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -166,7 +148,7 @@ Kc Ks Js 9h 2c 						      |	Ks Kc Js 9h 2c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Kc Ks Js 9h 2c 		      |	 - 5 cards used for hand: Ks Kc Js 9h 2c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -178,7 +160,7 @@ Ac As Qd 9d 8c 3h 					      |	As Ac Qd 9d 8c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ac As Qd 9d 8c 		      |	 - 5 cards used for hand: As Ac Qd 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -186,7 +168,7 @@ Ad Ah Qh Js 9c 2h 					      |	Ah Ad Qh Js 9c 2h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ad Ah Qh Js 9c 		      |	 - 5 cards used for hand: Ah Ad Qh Js 9c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -198,7 +180,7 @@ As Kd Kh 7d 3s 2c 					      |	As Kh Kd 7d 3s 2c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 1 / value K)	 - The most of a kind is 2 of a kind (at index 1 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Kd Kh As 7d 3s 		      |	 - 5 cards used for hand: Kh Kd As 7d 3s 
 Hand 2:								Hand 2:
 --------							--------
@@ -206,7 +188,7 @@ As Kh Qc Qd 9d 5c 					      |	As Kh Qd Qc 9d 5c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 2 / value Q)	 - The most of a kind is 2 of a kind (at index 2 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Qc Qd As Kh 9d 		      |	 - 5 cards used for hand: Qd Qc As Kh 9d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -218,7 +200,7 @@ Js 9h 7c 5c 5d 4s 					      |	Js 9h 7c 5d 5c 4s
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 3 / value 5)	 - The most of a kind is 2 of a kind (at index 3 / value 5)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: 5c 5d Js 9h 7c 		      |	 - 5 cards used for hand: 5d 5c Js 9h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -226,7 +208,7 @@ Jd 9h 7c 6h 5h 5s 					      |	Jd 9h 7c 6h 5s 5h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 4 / value 5)	 - The most of a kind is 2 of a kind (at index 4 / value 5)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: 5h 5s Jd 9h 7c 		      |	 - 5 cards used for hand: 5s 5h Jd 9h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -235,68 +217,48 @@ Tie							      |	Hand 1 wins!
 Testcase 3: Trying hands with 2 pairs
  Checking the output 
 Line_3_did_not_match
-Line_7_did_not_match
 Line_8_did_not_match
 Line_11_did_not_match
-Line_15_did_not_match
 Line_16_did_not_match
 Line_23_did_not_match
-Line_27_did_not_match
 Line_28_did_not_match
 Line_31_did_not_match
-Line_35_did_not_match
 Line_36_did_not_match
 Line_43_did_not_match
-Line_47_did_not_match
 Line_48_did_not_match
 Line_51_did_not_match
-Line_55_did_not_match
 Line_56_did_not_match
 Line_59_did_not_match
 Line_63_did_not_match
-Line_67_did_not_match
 Line_68_did_not_match
 Line_71_did_not_match
-Line_75_did_not_match
 Line_76_did_not_match
 Line_79_did_not_match
 Line_83_did_not_match
-Line_87_did_not_match
 Line_88_did_not_match
 Line_91_did_not_match
-Line_95_did_not_match
 Line_96_did_not_match
 Line_103_did_not_match
-Line_107_did_not_match
 Line_108_did_not_match
 Line_111_did_not_match
-Line_115_did_not_match
 Line_116_did_not_match
 Line_119_did_not_match
 Line_123_did_not_match
-Line_127_did_not_match
 Line_128_did_not_match
 Line_131_did_not_match
-Line_135_did_not_match
 Line_136_did_not_match
 Line_143_did_not_match
-Line_147_did_not_match
 Line_148_did_not_match
 Line_151_did_not_match
-Line_155_did_not_match
 Line_156_did_not_match
 Line_159_did_not_match
 Line_163_did_not_match
-Line_167_did_not_match
 Line_168_did_not_match
 Line_171_did_not_match
-Line_175_did_not_match
 Line_176_did_not_match
 Line_183_did_not_match
-Line_187_did_not_match
 Line_188_did_not_match
 Line_191_did_not_match
-Line_195_did_not_match
 Line_196_did_not_match
 Your file did not match the expected ouput
  - Output did not match, testcase failed
@@ -306,7 +268,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -314,7 +276,7 @@ Ad Ah Kd Ks 3h 						      |	Ah Ad Ks Kd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Kd Ks 3h 		      |	 - 5 cards used for hand: Ah Ad Ks Kd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -326,7 +288,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -334,7 +296,7 @@ Ad Ah Qd Qs 3h 						      |	Ah Ad Qs Qd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value Q)				 - Secondary pair at index 2 (value Q)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Qd Qs 3h 		      |	 - 5 cards used for hand: Ah Ad Qs Qd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -346,7 +308,7 @@ Kc Ks Qc Qh 4d 						      |	Ks Kc Qh Qc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - Secondary pair at index 2 (value Q)				 - Secondary pair at index 2 (value Q)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Kc Ks Qc Qh 4d 		      |	 - 5 cards used for hand: Ks Kc Qh Qc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -354,7 +316,7 @@ Ad Ah Jd Js 3h 						      |	Ah Ad Js Jd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value J)				 - Secondary pair at index 2 (value J)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Jd Js 3h 		      |	 - 5 cards used for hand: Ah Ad Js Jd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -366,7 +328,7 @@ Kc Ks Qc Qh 4d 						      |	Ks Kc Qh Qc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - Secondary pair at index 2 (value Q)				 - Secondary pair at index 2 (value Q)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Kc Ks Qc Qh 4d 		      |	 - 5 cards used for hand: Ks Kc Qh Qc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -374,7 +336,7 @@ Ad Ah Qd Qs 3h 						      |	Ah Ad Qs Qd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value Q)				 - Secondary pair at index 2 (value Q)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Qd Qs 3h 		      |	 - 5 cards used for hand: Ah Ad Qs Qd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -386,7 +348,7 @@ Js 7c 7h 4s 3d 3h 					      |	Js 7h 7c 4s 3h 3d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 1 / value 7)	 - The most of a kind is 2 of a kind (at index 1 / value 7)
  - Secondary pair at index 4 (value 3)				 - Secondary pair at index 4 (value 3)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: 7c 7h 3d 3h Js 		      |	 - 5 cards used for hand: 7h 7c 3h 3d Js 
 Hand 2:								Hand 2:
 --------							--------
@@ -394,7 +356,7 @@ Qs 7d 7s 5c 2d 2h 					      |	Qs 7s 7d 5c 2h 2d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 1 / value 7)	 - The most of a kind is 2 of a kind (at index 1 / value 7)
  - Secondary pair at index 4 (value 2)				 - Secondary pair at index 4 (value 2)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: 7d 7s 2d 2h Qs 		      |	 - 5 cards used for hand: 7s 7d 2h 2d Qs 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -406,7 +368,7 @@ Js 7c 7h 4s 3d 3h 					      |	Js 7h 7c 4s 3h 3d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 1 / value 7)	 - The most of a kind is 2 of a kind (at index 1 / value 7)
  - Secondary pair at index 4 (value 3)				 - Secondary pair at index 4 (value 3)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: 7c 7h 3d 3h Js 		      |	 - 5 cards used for hand: 7h 7c 3h 3d Js 
 Hand 2:								Hand 2:
 --------							--------
@@ -414,7 +376,7 @@ Qs 8d 8s 5c 2d 2h 					      |	Qs 8s 8d 5c 2h 2d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 1 / value 8)	 - The most of a kind is 2 of a kind (at index 1 / value 8)
  - Secondary pair at index 4 (value 2)				 - Secondary pair at index 4 (value 2)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: 8d 8s 2d 2h Qs 		      |	 - 5 cards used for hand: 8s 8d 2h 2d Qs 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -426,7 +388,7 @@ Jc Js 9d 5c 5s 4h 					      |	Js Jc 9d 5s 5c 4h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value J)	 - The most of a kind is 2 of a kind (at index 0 / value J)
  - Secondary pair at index 3 (value 5)				 - Secondary pair at index 3 (value 5)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Jc Js 5c 5s 9d 		      |	 - 5 cards used for hand: Js Jc 5s 5c 9d 
 Hand 2:								Hand 2:
 --------							--------
@@ -434,7 +396,7 @@ Jc Js 9d 4c 4s 3h 					      |	Js Jc 9d 4s 4c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value J)	 - The most of a kind is 2 of a kind (at index 0 / value J)
  - Secondary pair at index 3 (value 4)				 - Secondary pair at index 3 (value 4)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Jc Js 4c 4s 9d 		      |	 - 5 cards used for hand: Js Jc 4s 4c 9d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -446,7 +408,7 @@ Jc Js 9d 5c 5s 4h 					      |	Js Jc 9d 5s 5c 4h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value J)	 - The most of a kind is 2 of a kind (at index 0 / value J)
  - Secondary pair at index 3 (value 5)				 - Secondary pair at index 3 (value 5)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Jc Js 5c 5s 9d 		      |	 - 5 cards used for hand: Js Jc 5s 5c 9d 
 Hand 2:								Hand 2:
 --------							--------
@@ -454,7 +416,7 @@ Qc Qs 9d 5c 5s 3h 					      |	Qs Qc 9d 5s 5c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value Q)	 - The most of a kind is 2 of a kind (at index 0 / value Q)
  - Secondary pair at index 3 (value 5)				 - Secondary pair at index 3 (value 5)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Qc Qs 5c 5s 9d 		      |	 - 5 cards used for hand: Qs Qc 5s 5c 9d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -466,7 +428,7 @@ Jc Js 9d 5c 5s 4h 					      |	Js Jc 9d 5s 5c 4h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value J)	 - The most of a kind is 2 of a kind (at index 0 / value J)
  - Secondary pair at index 3 (value 5)				 - Secondary pair at index 3 (value 5)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Jc Js 5c 5s 9d 		      |	 - 5 cards used for hand: Js Jc 5s 5c 9d 
 Hand 2:								Hand 2:
 --------							--------
@@ -474,7 +436,7 @@ Jc Js 8d 5c 5s 3h 					      |	Js Jc 8d 5s 5c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value J)	 - The most of a kind is 2 of a kind (at index 0 / value J)
  - Secondary pair at index 3 (value 5)				 - Secondary pair at index 3 (value 5)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Jc Js 5c 5s 8d 		      |	 - 5 cards used for hand: Js Jc 5s 5c 8d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -486,7 +448,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -494,7 +456,7 @@ Jc Js 8d 5c 5s 						      |	Js Jc 8d 5s 5c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value J)	 - The most of a kind is 2 of a kind (at index 0 / value J)
  - Secondary pair at index 3 (value 5)				 - Secondary pair at index 3 (value 5)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Jc Js 5c 5s 8d 		      |	 - 5 cards used for hand: Js Jc 5s 5c 8d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -503,42 +465,30 @@ Hand 1 wins!							Hand 1 wins!
 Testcase 4: Trying hands with 3 of a kind
  Checking the output 
 Line_3_did_not_match
-Line_7_did_not_match
 Line_8_did_not_match
 Line_11_did_not_match
-Line_15_did_not_match
 Line_16_did_not_match
 Line_23_did_not_match
-Line_27_did_not_match
 Line_28_did_not_match
 Line_31_did_not_match
-Line_35_did_not_match
 Line_36_did_not_match
 Line_39_did_not_match
 Line_43_did_not_match
-Line_47_did_not_match
 Line_48_did_not_match
 Line_51_did_not_match
-Line_55_did_not_match
 Line_56_did_not_match
 Line_63_did_not_match
-Line_67_did_not_match
 Line_68_did_not_match
 Line_71_did_not_match
-Line_75_did_not_match
 Line_76_did_not_match
 Line_79_did_not_match
 Line_83_did_not_match
-Line_87_did_not_match
 Line_88_did_not_match
 Line_91_did_not_match
-Line_95_did_not_match
 Line_96_did_not_match
 Line_103_did_not_match
-Line_107_did_not_match
 Line_108_did_not_match
 Line_111_did_not_match
-Line_115_did_not_match
 Line_116_did_not_match
 Your file did not match the expected ouput
  - Output did not match, testcase failed
@@ -548,7 +498,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -556,7 +506,7 @@ Jc Jd Jh 7c 5h 2c 					      |	Jh Jd Jc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value J)	 - The most of a kind is 3 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh 7c 5h 		      |	 - 5 cards used for hand: Jh Jd Jc 7c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -568,7 +518,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -576,7 +526,7 @@ Qc Qd Qh 8c 5h 2c 					      |	Qh Qd Qc 8c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 8c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 8c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -588,7 +538,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -596,7 +546,7 @@ Qc Qd Qh 7c 4h 2c 					      |	Qh Qd Qc 7c 4h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 4h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 4h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -608,7 +558,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -616,7 +566,7 @@ Qc Qd Qh 7c 5h 3c 					      |	Qh Qd Qc 7c 5h 3c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -628,7 +578,7 @@ As Kc Qc Qd Qh 7c 					      |	As Kc Qh Qd Qc 7c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 2 / value Q)	 - The most of a kind is 3 of a kind (at index 2 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh As Kc 		      |	 - 5 cards used for hand: Qh Qd Qc As Kc 
 Hand 2:								Hand 2:
 --------							--------
@@ -636,7 +586,7 @@ As Qc Jc Jd Jh 7c 					      |	As Qc Jh Jd Jc 7c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 2 / value J)	 - The most of a kind is 3 of a kind (at index 2 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh As Qc 		      |	 - 5 cards used for hand: Jh Jd Jc As Qc 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -648,7 +598,7 @@ As Kc Jc Jd Jh 7c 					      |	As Kc Jh Jd Jc 7c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 2 / value J)	 - The most of a kind is 3 of a kind (at index 2 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh As Kc 		      |	 - 5 cards used for hand: Jh Jd Jc As Kc 
 Hand 2:								Hand 2:
 --------							--------
@@ -656,7 +606,7 @@ As Qc Jc Jd Jh 7c 					      |	As Qc Jh Jd Jc 7c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 2 / value J)	 - The most of a kind is 3 of a kind (at index 2 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh As Qc 		      |	 - 5 cards used for hand: Jh Jd Jc As Qc 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -664,26 +614,16 @@ Hand 1 wins!							Hand 1 wins!
 ============================					============================
 Testcase 5: Trying hands with straights
  Checking the output 
-Line_8_did_not_match
-Line_17_did_not_match
 Line_21_did_not_match
 Line_29_did_not_match
 Line_30_did_not_match
-Line_38_did_not_match
 Line_46_did_not_match
-Line_52_did_not_match
 Line_53_did_not_match
 Line_56_did_not_match
-Line_61_did_not_match
 Line_62_did_not_match
 Line_65_did_not_match
-Line_74_did_not_match
-Line_83_did_not_match
-Line_96_did_not_match
 Line_104_did_not_match
 Line_105_did_not_match
-Line_117_did_not_match
-Line_128_did_not_match
 Line_132_did_not_match
 Your file did not match the expected ouput
  - Output did not match, testcase failed
@@ -694,7 +634,7 @@ Hand 1:								Hand 1:
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value 0)	 - The most of a kind is 1 of a kind (at index 0 / value 0)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 0s 9s 8c 7h 6d 			 - 5 cards used for hand: 0s 9s 8c 7h 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -703,7 +643,7 @@ Js 0c 9s 8d 7c 							Js 0c 9s 8d 7c
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Js 0c 9s 8d 7c 			 - 5 cards used for hand: Js 0c 9s 8d 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -716,7 +656,7 @@ As 5c 4h 3s 2c 							As 5c 4h 3s 2c
  - Straight at index 0					      <
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: STRAIGHT			      |	 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: 5c 4h 3s 2c As 		      |	 - 5 cards used for hand: As 5c 4h 3s 2c 
 Hand 2:								Hand 2:
 --------							--------
@@ -725,7 +665,7 @@ Hand 2:								Hand 2:
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value 6)	 - The most of a kind is 1 of a kind (at index 0 / value 6)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 6c 5h 4s 3s 2d 			 - 5 cards used for hand: 6c 5h 4s 3s 2d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -739,7 +679,7 @@ Qh Qs Jd Js 0c 0s 9d 8c 				      |	Qs Qh Js Jd 0s 0c 9d 8c
  - Straight at index 1						 - Straight at index 1
  - The most of a kind is 2 of a kind (at index 0 / value Q)	 - The most of a kind is 2 of a kind (at index 0 / value Q)
  - Secondary pair at index 2 (value J)				 - Secondary pair at index 2 (value J)
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Qh Jd 0c 9d 8c 		      |	 - 5 cards used for hand: Qs Js 0s 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -748,7 +688,7 @@ Kc Qh Qs Jd Js 0c 0s 9d 				      |	Kc Qs Qh Js Jd 0s 0c 9d
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 2 of a kind (at index 1 / value Q)	 - The most of a kind is 2 of a kind (at index 1 / value Q)
  - Secondary pair at index 3 (value J)				 - Secondary pair at index 3 (value J)
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Kc Qh Jd 0c 9d 		      |	 - 5 cards used for hand: Kc Qs Js 0s 9d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -761,7 +701,7 @@ As Jd 9h 8c 7d 6c 5d 						As Jd 9h 8c 7d 6c 5d
  - Straight at index 2						 - Straight at index 2
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 9h 8c 7d 6c 5d 			 - 5 cards used for hand: 9h 8c 7d 6c 5d 
 Hand 2:								Hand 2:
 --------							--------
@@ -770,7 +710,7 @@ Kc Qh 8c 7h 6c 5d 4s 						Kc Qh 8c 7h 6c 5d 4s
  - Straight at index 2						 - Straight at index 2
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 8c 7h 6c 5d 4s 			 - 5 cards used for hand: 8c 7h 6c 5d 4s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -783,7 +723,7 @@ As Kd Qs Jd 0s 							As Kd Qs Jd 0s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: As Kd Qs Jd 0s 			 - 5 cards used for hand: As Kd Qs Jd 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -792,7 +732,7 @@ Ac 5s 4c 3s 2s 							Ac 5s 4c 3s 2s
  - Straight at index 0					      <
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: STRAIGHT			      |	 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: 5s 4c 3s 2s Ac 		      |	 - 5 cards used for hand: Ac 5s 4c 3s 2s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -805,7 +745,7 @@ Jh 0s 9c 8s 7c 4c 3d 						Jh 0s 9c 8s 7c 4c 3d
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Jh 0s 9c 8s 7c 			 - 5 cards used for hand: Jh 0s 9c 8s 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -816,7 +756,7 @@ Jh 0s 9c 8s 7c 6c 5d 						Jh 0s 9c 8s 7c 6c 5d
  - Straight at index 2						 - Straight at index 2
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Jh 0s 9c 8s 7c 			 - 5 cards used for hand: Jh 0s 9c 8s 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -824,44 +764,14 @@ Tie							      |	Hand 1 wins!
 ============================					============================
 Testcase 6: Trying hands with flushes
  Checking the output 
-Line_8_did_not_match
-Line_17_did_not_match
 Line_21_did_not_match
-Line_29_did_not_match
-Line_37_did_not_match
-Line_49_did_not_match
-Line_57_did_not_match
 Line_65_did_not_match
-Line_69_did_not_match
 Line_73_did_not_match
-Line_77_did_not_match
-Line_89_did_not_match
-Line_97_did_not_match
-Line_109_did_not_match
-Line_117_did_not_match
 Line_121_did_not_match
-Line_129_did_not_match
-Line_137_did_not_match
-Line_149_did_not_match
-Line_157_did_not_match
 Line_161_did_not_match
-Line_169_did_not_match
-Line_177_did_not_match
-Line_189_did_not_match
-Line_197_did_not_match
 Line_201_did_not_match
-Line_209_did_not_match
-Line_217_did_not_match
-Line_229_did_not_match
-Line_237_did_not_match
 Line_241_did_not_match
-Line_249_did_not_match
-Line_257_did_not_match
-Line_269_did_not_match
-Line_277_did_not_match
 Line_281_did_not_match
-Line_289_did_not_match
-Line_297_did_not_match
 Line_301_did_not_match
 Your file did not match the expected ouput
  - Output did not match, testcase failed
@@ -872,7 +782,7 @@ As Kc Qs Js 0s 2s 						As Kc Qs Js 0s 2s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs Js 0s 2s 			 - 5 cards used for hand: As Qs Js 0s 2s 
 Hand 2:								Hand 2:
 --------							--------
@@ -881,7 +791,7 @@ As Ks Qc Js 0s 3s 						As Ks Qc Js 0s 3s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Ks Js 0s 3s 			 - 5 cards used for hand: As Ks Js 0s 3s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -893,7 +803,7 @@ Kh Jh 9h 8s 4h 2h 						Kh Jh 9h 8s 4h 2h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Kh Jh 9h 4h 2h 			 - 5 cards used for hand: Kh Jh 9h 4h 2h 
 Hand 2:								Hand 2:
 --------							--------
@@ -901,7 +811,7 @@ Qd 9d 7d 6c 5d 2d 						Qd 9d 7d 6c 5d 2d
  - Flush in suit d						 - Flush in suit d
  - The most of a kind is 1 of a kind (at index 0 / value Q)	 - The most of a kind is 1 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Qd 9d 7d 5d 2d 			 - 5 cards used for hand: Qd 9d 7d 5d 2d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -913,7 +823,7 @@ Kc Jc 9c 7h 4c 3c 2h 						Kc Jc 9c 7h 4c 3c 2h
  - Flush in suit c						 - Flush in suit c
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Kc Jc 9c 4c 3c 			 - 5 cards used for hand: Kc Jc 9c 4c 3c 
 Hand 2:								Hand 2:
 --------							--------
@@ -921,7 +831,7 @@ Kc Jc 9c 7h 4c 3h 2c 						Kc Jc 9c 7h 4c 3h 2c
  - Flush in suit c						 - Flush in suit c
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Kc Jc 9c 4c 2c 			 - 5 cards used for hand: Kc Jc 9c 4c 2c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -933,7 +843,7 @@ Ac As Qc Qs 7s 6s 3s 					      |	As Ac Qs Qc 7s 6s 3s
  - Flush in suit s						 - Flush in suit s
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value Q)				 - Secondary pair at index 2 (value Q)
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs 7s 6s 3s 			 - 5 cards used for hand: As Qs 7s 6s 3s 
 Hand 2:								Hand 2:
 --------							--------
@@ -941,7 +851,7 @@ Kc Kh Ks 9h 7h 3h 2h 					      |	Ks Kh Kc 9h 7h 3h 2h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Kh 9h 7h 3h 2h 			 - 5 cards used for hand: Kh 9h 7h 3h 2h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -953,7 +863,7 @@ Ah Qh 0h 8h 6h 4h 2h 						Ah Qh 0h 8h 6h 4h 2h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ah Qh 0h 8h 6h 			 - 5 cards used for hand: Ah Qh 0h 8h 6h 
 Hand 2:								Hand 2:
 --------							--------
@@ -961,7 +871,7 @@ Kh Qh 0h 8h 6h 4h 2h 						Kh Qh 0h 8h 6h 4h 2h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Kh Qh 0h 8h 6h 			 - 5 cards used for hand: Kh Qh 0h 8h 6h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -973,7 +883,7 @@ Ad Qd 0d 8d 6d 4d 						Ad Qd 0d 8d 6d 4d
  - Flush in suit d						 - Flush in suit d
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ad Qd 0d 8d 6d 			 - 5 cards used for hand: Ad Qd 0d 8d 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -981,7 +891,7 @@ Ad Kd 0d 8d 6d 4d 						Ad Kd 0d 8d 6d 4d
  - Flush in suit d						 - Flush in suit d
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ad Kd 0d 8d 6d 			 - 5 cards used for hand: Ad Kd 0d 8d 6d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -993,7 +903,7 @@ Ad Qd 0d 8d 6d 4d 						Ad Qd 0d 8d 6d 4d
  - Flush in suit d						 - Flush in suit d
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ad Qd 0d 8d 6d 			 - 5 cards used for hand: Ad Qd 0d 8d 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -1001,7 +911,7 @@ Ad Jd 0d 8d 6d 4d 						Ad Jd 0d 8d 6d 4d
  - Flush in suit d						 - Flush in suit d
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ad Jd 0d 8d 6d 			 - 5 cards used for hand: Ad Jd 0d 8d 6d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1013,7 +923,7 @@ As Qs 0s 8s 6s 4s 						As Qs 0s 8s 6s 4s
  - Flush in suit s						 - Flush in suit s
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs 0s 8s 6s 			 - 5 cards used for hand: As Qs 0s 8s 6s 
 Hand 2:								Hand 2:
 --------							--------
@@ -1021,7 +931,7 @@ As Qs Js 8s 6s 4s 						As Qs Js 8s 6s 4s
  - Flush in suit s						 - Flush in suit s
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs Js 8s 6s 			 - 5 cards used for hand: As Qs Js 8s 6s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1033,7 +943,7 @@ As Qs 0s 8s 6s 4s 						As Qs 0s 8s 6s 4s
  - Flush in suit s						 - Flush in suit s
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs 0s 8s 6s 			 - 5 cards used for hand: As Qs 0s 8s 6s 
 Hand 2:								Hand 2:
 --------							--------
@@ -1041,7 +951,7 @@ As Qs 9s 8s 6s 4s 						As Qs 9s 8s 6s 4s
  - Flush in suit s						 - Flush in suit s
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs 9s 8s 6s 			 - 5 cards used for hand: As Qs 9s 8s 6s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1053,7 +963,7 @@ Ac Qc 0c 8c 6c 4c 						Ac Qc 0c 8c 6c 4c
  - Flush in suit c						 - Flush in suit c
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ac Qc 0c 8c 6c 			 - 5 cards used for hand: Ac Qc 0c 8c 6c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1061,7 +971,7 @@ Ac Qc 0c 9c 6c 4c 						Ac Qc 0c 9c 6c 4c
  - Flush in suit c						 - Flush in suit c
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ac Qc 0c 9c 6c 			 - 5 cards used for hand: Ac Qc 0c 9c 6c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1073,7 +983,7 @@ Ac Qc 0c 8c 6c 4c 						Ac Qc 0c 8c 6c 4c
  - Flush in suit c						 - Flush in suit c
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ac Qc 0c 8c 6c 			 - 5 cards used for hand: Ac Qc 0c 8c 6c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1081,7 +991,7 @@ Ac Qc 0c 7c 6c 4c 						Ac Qc 0c 7c 6c 4c
  - Flush in suit c						 - Flush in suit c
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ac Qc 0c 7c 6c 			 - 5 cards used for hand: Ac Qc 0c 7c 6c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1093,7 +1003,7 @@ Ah Qh 0h 8h 6h 4h 						Ah Qh 0h 8h 6h 4h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ah Qh 0h 8h 6h 			 - 5 cards used for hand: Ah Qh 0h 8h 6h 
 Hand 2:								Hand 2:
 --------							--------
@@ -1101,7 +1011,7 @@ Ah Qh 0h 8h 7h 4h 						Ah Qh 0h 8h 7h 4h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ah Qh 0h 8h 7h 			 - 5 cards used for hand: Ah Qh 0h 8h 7h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1113,7 +1023,7 @@ Ah Qh 0h 8h 6h 4h 						Ah Qh 0h 8h 6h 4h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ah Qh 0h 8h 6h 			 - 5 cards used for hand: Ah Qh 0h 8h 6h 
 Hand 2:								Hand 2:
 --------							--------
@@ -1121,7 +1031,7 @@ Ah Qh 0h 8h 5h 4h 						Ah Qh 0h 8h 5h 4h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ah Qh 0h 8h 5h 			 - 5 cards used for hand: Ah Qh 0h 8h 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1133,7 +1043,7 @@ Ah Qh 0h 8h 6h 4h 						Ah Qh 0h 8h 6h 4h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ah Qh 0h 8h 6h 			 - 5 cards used for hand: Ah Qh 0h 8h 6h 
 Hand 2:								Hand 2:
 --------							--------
@@ -1141,7 +1051,7 @@ Ah Qh 0h 8h 6h 5h 						Ah Qh 0h 8h 6h 5h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ah Qh 0h 8h 6h 			 - 5 cards used for hand: Ah Qh 0h 8h 6h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1153,7 +1063,7 @@ Ah Qh 0h 8h 6h 4h 						Ah Qh 0h 8h 6h 4h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ah Qh 0h 8h 6h 			 - 5 cards used for hand: Ah Qh 0h 8h 6h 
 Hand 2:								Hand 2:
 --------							--------
@@ -1161,7 +1071,7 @@ Ah Qh 0h 8h 6h 3h 						Ah Qh 0h 8h 6h 3h
  - Flush in suit h						 - Flush in suit h
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Ah Qh 0h 8h 6h 			 - 5 cards used for hand: Ah Qh 0h 8h 6h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1170,67 +1080,47 @@ Tie							      |	Hand 1 wins!
 Testcase 7: Trying hands with full houses
  Checking the output 
 Line_3_did_not_match
-Line_7_did_not_match
 Line_8_did_not_match
 Line_11_did_not_match
-Line_15_did_not_match
 Line_16_did_not_match
 Line_19_did_not_match
 Line_23_did_not_match
-Line_27_did_not_match
 Line_28_did_not_match
 Line_31_did_not_match
-Line_35_did_not_match
 Line_36_did_not_match
 Line_43_did_not_match
-Line_47_did_not_match
 Line_48_did_not_match
 Line_51_did_not_match
-Line_55_did_not_match
 Line_56_did_not_match
 Line_63_did_not_match
-Line_67_did_not_match
 Line_68_did_not_match
 Line_71_did_not_match
-Line_75_did_not_match
 Line_76_did_not_match
 Line_83_did_not_match
-Line_87_did_not_match
 Line_88_did_not_match
 Line_91_did_not_match
-Line_95_did_not_match
 Line_96_did_not_match
 Line_103_did_not_match
-Line_107_did_not_match
 Line_108_did_not_match
 Line_111_did_not_match
-Line_115_did_not_match
 Line_116_did_not_match
 Line_119_did_not_match
 Line_123_did_not_match
-Line_127_did_not_match
 Line_128_did_not_match
 Line_131_did_not_match
-Line_135_did_not_match
 Line_136_did_not_match
 Line_139_did_not_match
 Line_143_did_not_match
-Line_147_did_not_match
 Line_148_did_not_match
 Line_151_did_not_match
-Line_155_did_not_match
 Line_156_did_not_match
 Line_163_did_not_match
-Line_167_did_not_match
 Line_168_did_not_match
 Line_171_did_not_match
-Line_175_did_not_match
 Line_176_did_not_match
 Line_183_did_not_match
-Line_187_did_not_match
 Line_188_did_not_match
 Line_191_did_not_match
-Line_195_did_not_match
 Line_196_did_not_match
 Your file did not match the expected ouput
  - Output did not match, testcase failed
@@ -1240,7 +1130,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1248,7 +1138,7 @@ Kd Kh Ks 9h 7c 7h 2h 					      |	Ks Kh Kd 9h 7h 7c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1260,7 +1150,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1268,7 +1158,7 @@ Qd Qh Qs 9h 7c 7h 2h 					      |	Qs Qh Qd 9h 7h 7c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Qd Qh Qs 7c 7h 		      |	 - 5 cards used for hand: Qs Qh Qd 7h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1280,7 +1170,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1288,7 +1178,7 @@ Qd Qh Qs 9h 8c 8h 2h 					      |	Qs Qh Qd 9h 8h 8c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - Secondary pair at index 4 (value 8)				 - Secondary pair at index 4 (value 8)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Qd Qh Qs 8c 8h 		      |	 - 5 cards used for hand: Qs Qh Qd 8h 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1300,7 +1190,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1308,7 +1198,7 @@ Qd Qh Qs 9h 7c 7h 7s 					      |	Qs Qh Qd 9h 7s 7h 7c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Qd Qh Qs 7c 7h 		      |	 - 5 cards used for hand: Qs Qh Qd 7s 7h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1320,7 +1210,7 @@ Kd Kh Ks 8d 7c 7h 					      |	Ks Kh Kd 8d 7h 7c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1328,7 +1218,7 @@ Qd Qh Qs 9h 8c 8h 					      |	Qs Qh Qd 9h 8h 8c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - Secondary pair at index 4 (value 8)				 - Secondary pair at index 4 (value 8)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Qd Qh Qs 8c 8h 		      |	 - 5 cards used for hand: Qs Qh Qd 8h 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1340,7 +1230,7 @@ As Kd Kh Ks 7c 7h 2c 					      |	As Ks Kh Kd 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 1 / value K)	 - The most of a kind is 3 of a kind (at index 1 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1348,7 +1238,7 @@ Ad Ah As 8c 8d 8h 					      |	As Ah Ad 8h 8d 8c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value A)	 - The most of a kind is 3 of a kind (at index 0 / value A)
  - Secondary pair at index 3 (value 8)				 - Secondary pair at index 3 (value 8)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Ad Ah As 8c 8d 		      |	 - 5 cards used for hand: As Ah Ad 8h 8d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1360,7 +1250,7 @@ As Kd Kh Ks 7c 7h 2c 					      |	As Ks Kh Kd 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 1 / value K)	 - The most of a kind is 3 of a kind (at index 1 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1368,7 +1258,7 @@ Ad Ah As 6c 6d 6h 					      |	As Ah Ad 6h 6d 6c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value A)	 - The most of a kind is 3 of a kind (at index 0 / value A)
  - Secondary pair at index 3 (value 6)				 - Secondary pair at index 3 (value 6)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Ad Ah As 6c 6d 		      |	 - 5 cards used for hand: As Ah Ad 6h 6d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1380,7 +1270,7 @@ Kh Ks 8c 7c 7d 7h 					      |	Ks Kh 8c 7h 7d 7c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 3 / value 7)	 - The most of a kind is 3 of a kind (at index 3 / value 7)
  - Secondary pair at index 0 (value K)				 - Secondary pair at index 0 (value K)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: 7c 7d 7h Kh Ks 		      |	 - 5 cards used for hand: 7h 7d 7c Ks Kh 
 Hand 2:								Hand 2:
 --------							--------
@@ -1388,7 +1278,7 @@ Kh Ks 9d 3c 3h 3s 2c 					      |	Ks Kh 9d 3s 3h 3c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 3 / value 3)	 - The most of a kind is 3 of a kind (at index 3 / value 3)
  - Secondary pair at index 0 (value K)				 - Secondary pair at index 0 (value K)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: 3c 3h 3s Kh Ks 		      |	 - 5 cards used for hand: 3s 3h 3c Ks Kh 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1400,7 +1290,7 @@ Kh Ks 8c 7c 7d 7h 					      |	Ks Kh 8c 7h 7d 7c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 3 / value 7)	 - The most of a kind is 3 of a kind (at index 3 / value 7)
  - Secondary pair at index 0 (value K)				 - Secondary pair at index 0 (value K)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: 7c 7d 7h Kh Ks 		      |	 - 5 cards used for hand: 7h 7d 7c Ks Kh 
 Hand 2:								Hand 2:
 --------							--------
@@ -1408,7 +1298,7 @@ Qh Qs 9d 3c 3h 3s 2c 					      |	Qs Qh 9d 3s 3h 3c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 3 / value 3)	 - The most of a kind is 3 of a kind (at index 3 / value 3)
  - Secondary pair at index 0 (value Q)				 - Secondary pair at index 0 (value Q)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: 3c 3h 3s Qh Qs 		      |	 - 5 cards used for hand: 3s 3h 3c Qs Qh 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1420,7 +1310,7 @@ Kh Ks 8c 7c 7d 7h 					      |	Ks Kh 8c 7h 7d 7c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 3 / value 7)	 - The most of a kind is 3 of a kind (at index 3 / value 7)
  - Secondary pair at index 0 (value K)				 - Secondary pair at index 0 (value K)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: 7c 7d 7h Kh Ks 		      |	 - 5 cards used for hand: 7h 7d 7c Ks Kh 
 Hand 2:								Hand 2:
 --------							--------
@@ -1428,7 +1318,7 @@ Jh Js 9d 7c 7h 7s 2c 					      |	Js Jh 9d 7s 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 3 / value 7)	 - The most of a kind is 3 of a kind (at index 3 / value 7)
  - Secondary pair at index 0 (value J)				 - Secondary pair at index 0 (value J)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: 7c 7h 7s Jh Js 		      |	 - 5 cards used for hand: 7s 7h 7c Js Jh 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1437,44 +1327,32 @@ Hand 1 wins!							Hand 1 wins!
 Testcase 8: Trying hands with 4 of a kind
  Checking the output 
 Line_3_did_not_match
-Line_7_did_not_match
 Line_8_did_not_match
 Line_11_did_not_match
-Line_15_did_not_match
 Line_16_did_not_match
 Line_19_did_not_match
 Line_23_did_not_match
-Line_27_did_not_match
 Line_28_did_not_match
 Line_31_did_not_match
-Line_35_did_not_match
 Line_36_did_not_match
 Line_39_did_not_match
 Line_43_did_not_match
-Line_47_did_not_match
 Line_48_did_not_match
 Line_51_did_not_match
-Line_55_did_not_match
 Line_56_did_not_match
 Line_59_did_not_match
 Line_63_did_not_match
-Line_67_did_not_match
 Line_68_did_not_match
 Line_71_did_not_match
-Line_75_did_not_match
 Line_76_did_not_match
 Line_79_did_not_match
 Line_83_did_not_match
-Line_87_did_not_match
 Line_88_did_not_match
 Line_91_did_not_match
-Line_95_did_not_match
 Line_96_did_not_match
 Line_103_did_not_match
-Line_107_did_not_match
 Line_108_did_not_match
 Line_111_did_not_match
-Line_115_did_not_match
 Line_116_did_not_match
 Your file did not match the expected ouput
  - Output did not match, testcase failed
@@ -1484,7 +1362,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1492,7 +1370,7 @@ Kc Kd Kh Ks 8c 6d 					      |	Ks Kh Kd Kc 8c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1504,7 +1382,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1512,7 +1390,7 @@ Kc Kd Kh Ks 9d 8c 					      |	Ks Kh Kd Kc 9d 8c
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 9d 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 9d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1524,7 +1402,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1532,7 +1410,7 @@ As Kc Kd Kh Ks 4d 					      |	As Ks Kh Kd Kc 4d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 1 / value K)	 - The most of a kind is 4 of a kind (at index 1 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks As 		      |	 - 5 cards used for hand: Ks Kh Kd Kc As 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1544,7 +1422,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1552,7 +1430,7 @@ Ac As Kc Kd Kh Ks 					      |	As Ac Ks Kh Kd Kc
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 2 / value K)	 - The most of a kind is 4 of a kind (at index 2 / value K)
  - Secondary pair at index 0 (value A)				 - Secondary pair at index 0 (value A)
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks Ac 		      |	 - 5 cards used for hand: Ks Kh Kd Kc As 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1564,7 +1442,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1572,7 +1450,7 @@ Qc Qd Qh Qs 8c 6d 					      |	Qs Qh Qd Qc 8c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value Q)	 - The most of a kind is 4 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh Qs 8c 		      |	 - 5 cards used for hand: Qs Qh Qd Qc 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1584,7 +1462,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -1592,7 +1470,7 @@ Qc Qd Qh Qs 9c 6d 					      |	Qs Qh Qd Qc 9c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value Q)	 - The most of a kind is 4 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh Qs 9c 		      |	 - 5 cards used for hand: Qs Qh Qd Qc 9c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1600,21 +1478,13 @@ Hand 1 wins!							Hand 1 wins!
 ============================					============================
 Testcase 9: Trying hands with straight flushes
  Checking the output 
-Line_8_did_not_match
-Line_17_did_not_match
-Line_32_did_not_match
-Line_43_did_not_match
 Line_51_did_not_match
 Line_54_did_not_match
 Line_57_did_not_match
 Line_61_did_not_match
 Line_64_did_not_match
 Line_67_did_not_match
-Line_80_did_not_match
-Line_90_did_not_match
 Line_94_did_not_match
-Line_103_did_not_match
-Line_112_did_not_match
 Your file did not match the expected ouput
  - Output did not match, testcase failed
 Hand 1:								Hand 1:
@@ -1624,7 +1494,7 @@ As Ks Qs Js 0s 							As Ks Qs Js 0s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -1633,7 +1503,7 @@ Kh Qh Jh 0h 9h 							Kh Qh Jh 0h 9h
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1648,7 +1518,7 @@ As Ks Qs Js 0s 9s 8s 						As Ks Qs Js 0s 9s 8s
  - Straight flush at index 2					 - Straight flush at index 2
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -1659,7 +1529,7 @@ Kh Qh Jh 0h 9h 8h 7h 						Kh Qh Jh 0h 9h 8h 7h
  - Straight flush at index 2					 - Straight flush at index 2
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1673,7 +1543,7 @@ Ac As Kc Ks Qs Js 0s 					      |	As Ac Ks Kc Qs Js 0s
  - Straight flush at index 1				      |	 - Straight at index 1
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -1683,7 +1553,7 @@ Ad Kh Qh Jh Js 0h 9h 					      |	Ad Kh Qh Js Jh 0h 9h
  - Straight flush at index 1				      |	 - Straight at index 1
  - The most of a kind is 2 of a kind (at index 3 / value J)	 - The most of a kind is 2 of a kind (at index 3 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1696,7 +1566,7 @@ Ah Kc 5h 4h 3h 2h 						Ah Kc 5h 4h 3h 2h
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: 5h 4h 3h 2h Ah 			 - 5 cards used for hand: 5h 4h 3h 2h Ah 
 Hand 2:								Hand 2:
 --------							--------
@@ -1706,7 +1576,7 @@ Ac 6c 5c 4c 3c 2c 						Ac 6c 5c 4c 3c 2c
  - Straight flush at index 1					 - Straight flush at index 1
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: 5c 4c 3c 2c Ac 			 - 5 cards used for hand: 5c 4c 3c 2c Ac 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1719,7 +1589,7 @@ As Ks Qs Js 0s 							As Ks Qs Js 0s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -1728,7 +1598,7 @@ As 5s 4s 3s 2s 							As 5s 4s 3s 2s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: 5s 4s 3s 2s As 			 - 5 cards used for hand: 5s 4s 3s 2s As 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -1736,309 +1606,165 @@ Hand 1 wins!							Hand 1 wins!
 ============================					============================
 Testcase 10: Trying each type of hand ranking
  Checking the output 
-Line_8_did_not_match
 Line_12_did_not_match
-Line_16_did_not_match
 Line_17_did_not_match
-Line_29_did_not_match
 Line_33_did_not_match
-Line_37_did_not_match
 Line_38_did_not_match
-Line_50_did_not_match
-Line_58_did_not_match
-Line_71_did_not_match
 Line_75_did_not_match
-Line_79_did_not_match
 Line_80_did_not_match
-Line_92_did_not_match
-Line_101_did_not_match
-Line_114_did_not_match
-Line_123_did_not_match
-Line_136_did_not_match
 Line_140_did_not_match
-Line_144_did_not_match
 Line_145_did_not_match
-Line_157_did_not_match
 Line_161_did_not_match
-Line_165_did_not_match
 Line_166_did_not_match
 Line_173_did_not_match
-Line_177_did_not_match
 Line_178_did_not_match
-Line_186_did_not_match
 Line_194_did_not_match
-Line_198_did_not_match
 Line_199_did_not_match
 Line_202_did_not_match
-Line_206_did_not_match
 Line_207_did_not_match
 Line_214_did_not_match
-Line_218_did_not_match
 Line_219_did_not_match
-Line_226_did_not_match
 Line_234_did_not_match
-Line_238_did_not_match
 Line_239_did_not_match
 Line_242_did_not_match
-Line_246_did_not_match
 Line_247_did_not_match
 Line_254_did_not_match
-Line_258_did_not_match
 Line_259_did_not_match
-Line_267_did_not_match
 Line_275_did_not_match
-Line_279_did_not_match
 Line_280_did_not_match
-Line_288_did_not_match
 Line_296_did_not_match
-Line_300_did_not_match
 Line_301_did_not_match
 Line_304_did_not_match
-Line_308_did_not_match
 Line_309_did_not_match
 Line_316_did_not_match
-Line_320_did_not_match
 Line_321_did_not_match
 Line_324_did_not_match
-Line_328_did_not_match
 Line_329_did_not_match
 Line_336_did_not_match
-Line_340_did_not_match
 Line_341_did_not_match
-Line_349_did_not_match
 Line_357_did_not_match
-Line_361_did_not_match
 Line_362_did_not_match
 Line_365_did_not_match
-Line_369_did_not_match
 Line_370_did_not_match
 Line_377_did_not_match
-Line_381_did_not_match
 Line_382_did_not_match
-Line_389_did_not_match
 Line_397_did_not_match
-Line_401_did_not_match
 Line_402_did_not_match
 Line_405_did_not_match
-Line_409_did_not_match
 Line_410_did_not_match
 Line_417_did_not_match
-Line_421_did_not_match
 Line_422_did_not_match
-Line_430_did_not_match
 Line_438_did_not_match
-Line_442_did_not_match
 Line_443_did_not_match
-Line_451_did_not_match
 Line_459_did_not_match
-Line_463_did_not_match
 Line_464_did_not_match
 Line_467_did_not_match
-Line_471_did_not_match
 Line_472_did_not_match
 Line_479_did_not_match
-Line_483_did_not_match
 Line_484_did_not_match
 Line_487_did_not_match
-Line_491_did_not_match
 Line_492_did_not_match
-Line_503_did_not_match
-Line_512_did_not_match
-Line_524_did_not_match
 Line_528_did_not_match
-Line_532_did_not_match
 Line_533_did_not_match
-Line_544_did_not_match
 Line_548_did_not_match
-Line_552_did_not_match
 Line_553_did_not_match
-Line_564_did_not_match
 Line_568_did_not_match
-Line_572_did_not_match
 Line_573_did_not_match
-Line_584_did_not_match
-Line_593_did_not_match
-Line_605_did_not_match
-Line_614_did_not_match
-Line_626_did_not_match
 Line_630_did_not_match
-Line_634_did_not_match
 Line_635_did_not_match
-Line_646_did_not_match
 Line_650_did_not_match
-Line_654_did_not_match
 Line_655_did_not_match
 Line_662_did_not_match
-Line_666_did_not_match
 Line_667_did_not_match
-Line_675_did_not_match
 Line_683_did_not_match
-Line_687_did_not_match
 Line_688_did_not_match
 Line_691_did_not_match
-Line_695_did_not_match
 Line_696_did_not_match
 Line_703_did_not_match
-Line_707_did_not_match
 Line_708_did_not_match
 Line_711_did_not_match
-Line_715_did_not_match
 Line_716_did_not_match
 Line_723_did_not_match
-Line_727_did_not_match
 Line_728_did_not_match
-Line_735_did_not_match
 Line_743_did_not_match
-Line_747_did_not_match
 Line_748_did_not_match
-Line_756_did_not_match
 Line_764_did_not_match
-Line_768_did_not_match
 Line_769_did_not_match
-Line_777_did_not_match
 Line_785_did_not_match
-Line_789_did_not_match
 Line_790_did_not_match
 Line_793_did_not_match
-Line_797_did_not_match
 Line_798_did_not_match
 Line_805_did_not_match
-Line_809_did_not_match
 Line_810_did_not_match
 Line_813_did_not_match
-Line_817_did_not_match
 Line_818_did_not_match
-Line_830_did_not_match
-Line_839_did_not_match
-Line_852_did_not_match
 Line_856_did_not_match
-Line_860_did_not_match
 Line_861_did_not_match
-Line_873_did_not_match
 Line_877_did_not_match
-Line_881_did_not_match
 Line_882_did_not_match
-Line_894_did_not_match
-Line_902_did_not_match
-Line_915_did_not_match
 Line_919_did_not_match
-Line_923_did_not_match
 Line_924_did_not_match
-Line_936_did_not_match
-Line_945_did_not_match
-Line_958_did_not_match
 Line_962_did_not_match
-Line_966_did_not_match
 Line_967_did_not_match
-Line_979_did_not_match
 Line_983_did_not_match
-Line_987_did_not_match
 Line_988_did_not_match
-Line_1000_did_not_match
-Line_1009_did_not_match
-Line_1022_did_not_match
 Line_1026_did_not_match
-Line_1030_did_not_match
 Line_1031_did_not_match
-Line_1043_did_not_match
 Line_1047_did_not_match
-Line_1051_did_not_match
 Line_1052_did_not_match
-Line_1064_did_not_match
-Line_1072_did_not_match
-Line_1085_did_not_match
 Line_1089_did_not_match
-Line_1093_did_not_match
 Line_1094_did_not_match
-Line_1106_did_not_match
-Line_1115_did_not_match
-Line_1128_did_not_match
 Line_1132_did_not_match
-Line_1136_did_not_match
 Line_1137_did_not_match
-Line_1149_did_not_match
 Line_1153_did_not_match
-Line_1157_did_not_match
 Line_1158_did_not_match
 Line_1165_did_not_match
-Line_1169_did_not_match
 Line_1170_did_not_match
-Line_1178_did_not_match
 Line_1186_did_not_match
-Line_1190_did_not_match
 Line_1191_did_not_match
 Line_1194_did_not_match
-Line_1198_did_not_match
 Line_1199_did_not_match
 Line_1206_did_not_match
-Line_1210_did_not_match
 Line_1211_did_not_match
 Line_1214_did_not_match
-Line_1218_did_not_match
 Line_1219_did_not_match
 Line_1226_did_not_match
-Line_1230_did_not_match
 Line_1231_did_not_match
-Line_1238_did_not_match
 Line_1246_did_not_match
-Line_1250_did_not_match
 Line_1251_did_not_match
 Line_1254_did_not_match
-Line_1258_did_not_match
 Line_1259_did_not_match
 Line_1266_did_not_match
-Line_1270_did_not_match
 Line_1271_did_not_match
-Line_1279_did_not_match
 Line_1287_did_not_match
-Line_1291_did_not_match
 Line_1292_did_not_match
-Line_1300_did_not_match
 Line_1308_did_not_match
-Line_1312_did_not_match
 Line_1313_did_not_match
 Line_1316_did_not_match
-Line_1320_did_not_match
 Line_1321_did_not_match
 Line_1328_did_not_match
-Line_1332_did_not_match
 Line_1333_did_not_match
-Line_1341_did_not_match
 Line_1349_did_not_match
-Line_1353_did_not_match
 Line_1354_did_not_match
 Line_1357_did_not_match
-Line_1361_did_not_match
 Line_1362_did_not_match
 Line_1369_did_not_match
-Line_1373_did_not_match
 Line_1374_did_not_match
 Line_1377_did_not_match
-Line_1381_did_not_match
 Line_1382_did_not_match
 Line_1389_did_not_match
-Line_1393_did_not_match
 Line_1394_did_not_match
-Line_1401_did_not_match
 Line_1409_did_not_match
-Line_1413_did_not_match
 Line_1414_did_not_match
 Line_1417_did_not_match
-Line_1421_did_not_match
 Line_1422_did_not_match
 Line_1429_did_not_match
-Line_1433_did_not_match
 Line_1434_did_not_match
-Line_1442_did_not_match
 Line_1450_did_not_match
-Line_1454_did_not_match
 Line_1455_did_not_match
-Line_1463_did_not_match
 Line_1471_did_not_match
-Line_1475_did_not_match
 Line_1476_did_not_match
 Line_1479_did_not_match
-Line_1483_did_not_match
 Line_1484_did_not_match
 Your file did not match the expected ouput
  - Output did not match, testcase failed
@@ -2049,7 +1775,7 @@ As Kc Qs Js 0s 2s 						As Kc Qs Js 0s 2s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs Js 0s 2s 			 - 5 cards used for hand: As Qs Js 0s 2s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2057,7 +1783,7 @@ Kc Kd Kh Ks 8c 6d 					      |	Ks Kh Kd Kc 8c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2070,7 +1796,7 @@ As Kc Qs Js 0s 2s 						As Kc Qs Js 0s 2s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs Js 0s 2s 			 - 5 cards used for hand: As Qs Js 0s 2s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2078,7 +1804,7 @@ Kd Kh Ks 9h 7c 7h 2h 					      |	Ks Kh Kd 9h 7h 7c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2091,7 +1817,7 @@ As Kc Qs Js 0s 2s 						As Kc Qs Js 0s 2s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs Js 0s 2s 			 - 5 cards used for hand: As Qs Js 0s 2s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2099,7 +1825,7 @@ Kc Js 7h 6c 4d 2h 						Kc Js 7h 6c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kc Js 7h 6c 4d 			 - 5 cards used for hand: Kc Js 7h 6c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2112,7 +1838,7 @@ As Kc Qs Js 0s 2s 						As Kc Qs Js 0s 2s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs Js 0s 2s 			 - 5 cards used for hand: As Qs Js 0s 2s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2120,7 +1846,7 @@ Kc Ks Js 9h 2c 						      |	Ks Kc Js 9h 2c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Kc Ks Js 9h 2c 		      |	 - 5 cards used for hand: Ks Kc Js 9h 2c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2133,7 +1859,7 @@ As Kc Qs Js 0s 2s 						As Kc Qs Js 0s 2s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs Js 0s 2s 			 - 5 cards used for hand: As Qs Js 0s 2s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2142,7 +1868,7 @@ Kh Qh Jh 0h 9h 							Kh Qh Jh 0h 9h
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2155,7 +1881,7 @@ As Kc Qs Js 0s 2s 						As Kc Qs Js 0s 2s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs Js 0s 2s 			 - 5 cards used for hand: As Qs Js 0s 2s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2164,7 +1890,7 @@ Js 0c 9s 8d 7c 							Js 0c 9s 8d 7c
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Js 0c 9s 8d 7c 			 - 5 cards used for hand: Js 0c 9s 8d 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2177,7 +1903,7 @@ As Kc Qs Js 0s 2s 						As Kc Qs Js 0s 2s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs Js 0s 2s 			 - 5 cards used for hand: As Qs Js 0s 2s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2185,7 +1911,7 @@ Jc Jd Jh 7c 5h 2c 					      |	Jh Jd Jc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value J)	 - The most of a kind is 3 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh 7c 5h 		      |	 - 5 cards used for hand: Jh Jd Jc 7c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2198,7 +1924,7 @@ As Kc Qs Js 0s 2s 						As Kc Qs Js 0s 2s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Qs Js 0s 2s 			 - 5 cards used for hand: As Qs Js 0s 2s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2206,7 +1932,7 @@ Ad Ah Kd Ks 3h 						      |	Ah Ad Ks Kd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Kd Ks 3h 		      |	 - 5 cards used for hand: Ah Ad Ks Kd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2218,7 +1944,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2227,7 +1953,7 @@ As Ks Qc Js 0s 3s 						As Ks Qc Js 0s 3s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Ks Js 0s 3s 			 - 5 cards used for hand: As Ks Js 0s 3s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2239,7 +1965,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2247,7 +1973,7 @@ Kd Kh Ks 9h 7c 7h 2h 					      |	Ks Kh Kd 9h 7h 7c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2259,7 +1985,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2267,7 +1993,7 @@ Kc Js 7h 6c 4d 2h 						Kc Js 7h 6c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kc Js 7h 6c 4d 			 - 5 cards used for hand: Kc Js 7h 6c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2279,7 +2005,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2287,7 +2013,7 @@ Kc Ks Js 9h 2c 						      |	Ks Kc Js 9h 2c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Kc Ks Js 9h 2c 		      |	 - 5 cards used for hand: Ks Kc Js 9h 2c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2299,7 +2025,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2308,7 +2034,7 @@ Kh Qh Jh 0h 9h 							Kh Qh Jh 0h 9h
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2320,7 +2046,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2329,7 +2055,7 @@ Js 0c 9s 8d 7c 							Js 0c 9s 8d 7c
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Js 0c 9s 8d 7c 			 - 5 cards used for hand: Js 0c 9s 8d 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2341,7 +2067,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2349,7 +2075,7 @@ Jc Jd Jh 7c 5h 2c 					      |	Jh Jd Jc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value J)	 - The most of a kind is 3 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh 7c 5h 		      |	 - 5 cards used for hand: Jh Jd Jc 7c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2361,7 +2087,7 @@ Kc Kd Kh Ks 8c 7d 					      |	Ks Kh Kd Kc 8c 7d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2369,7 +2095,7 @@ Ad Ah Kd Ks 3h 						      |	Ah Ad Ks Kd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Kd Ks 3h 		      |	 - 5 cards used for hand: Ah Ad Ks Kd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2381,7 +2107,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2390,7 +2116,7 @@ As Ks Qc Js 0s 3s 						As Ks Qc Js 0s 3s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Ks Js 0s 3s 			 - 5 cards used for hand: As Ks Js 0s 3s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2402,7 +2128,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2410,7 +2136,7 @@ Kc Kd Kh Ks 8c 6d 					      |	Ks Kh Kd Kc 8c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2422,7 +2148,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2430,7 +2156,7 @@ Kc Js 7h 6c 4d 2h 						Kc Js 7h 6c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kc Js 7h 6c 4d 			 - 5 cards used for hand: Kc Js 7h 6c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2442,7 +2168,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2450,7 +2176,7 @@ Kc Ks Js 9h 2c 						      |	Ks Kc Js 9h 2c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Kc Ks Js 9h 2c 		      |	 - 5 cards used for hand: Ks Kc Js 9h 2c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2462,7 +2188,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2471,7 +2197,7 @@ Kh Qh Jh 0h 9h 							Kh Qh Jh 0h 9h
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2483,7 +2209,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2492,7 +2218,7 @@ Js 0c 9s 8d 7c 							Js 0c 9s 8d 7c
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Js 0c 9s 8d 7c 			 - 5 cards used for hand: Js 0c 9s 8d 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2504,7 +2230,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2512,7 +2238,7 @@ Jc Jd Jh 7c 5h 2c 					      |	Jh Jd Jc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value J)	 - The most of a kind is 3 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh 7c 5h 		      |	 - 5 cards used for hand: Jh Jd Jc 7c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2524,7 +2250,7 @@ Kd Kh Ks 8d 7c 7h 2c 					      |	Ks Kh Kd 8d 7h 7c 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2532,7 +2258,7 @@ Ad Ah Kd Ks 3h 						      |	Ah Ad Ks Kd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Kd Ks 3h 		      |	 - 5 cards used for hand: Ah Ad Ks Kd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2544,7 +2270,7 @@ As Qd 9h 7c 3d 2s 						As Qd 9h 7c 3d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 7c 3d 			 - 5 cards used for hand: As Qd 9h 7c 3d 
 Hand 2:								Hand 2:
 --------							--------
@@ -2553,7 +2279,7 @@ As Ks Qc Js 0s 3s 						As Ks Qc Js 0s 3s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Ks Js 0s 3s 			 - 5 cards used for hand: As Ks Js 0s 3s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2565,7 +2291,7 @@ As Qd 9h 7c 3d 2s 						As Qd 9h 7c 3d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 7c 3d 			 - 5 cards used for hand: As Qd 9h 7c 3d 
 Hand 2:								Hand 2:
 --------							--------
@@ -2573,7 +2299,7 @@ Kc Kd Kh Ks 8c 6d 					      |	Ks Kh Kd Kc 8c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2585,7 +2311,7 @@ As Qd 9h 7c 3d 2s 						As Qd 9h 7c 3d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 7c 3d 			 - 5 cards used for hand: As Qd 9h 7c 3d 
 Hand 2:								Hand 2:
 --------							--------
@@ -2593,7 +2319,7 @@ Kd Kh Ks 9h 7c 7h 2h 					      |	Ks Kh Kd 9h 7h 7c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2605,7 +2331,7 @@ As Qd 9h 7c 3d 2s 						As Qd 9h 7c 3d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 7c 3d 			 - 5 cards used for hand: As Qd 9h 7c 3d 
 Hand 2:								Hand 2:
 --------							--------
@@ -2613,7 +2339,7 @@ Kc Ks Js 9h 2c 						      |	Ks Kc Js 9h 2c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Kc Ks Js 9h 2c 		      |	 - 5 cards used for hand: Ks Kc Js 9h 2c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2625,7 +2351,7 @@ As Qd 9h 7c 3d 2s 						As Qd 9h 7c 3d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 7c 3d 			 - 5 cards used for hand: As Qd 9h 7c 3d 
 Hand 2:								Hand 2:
 --------							--------
@@ -2634,7 +2360,7 @@ Kh Qh Jh 0h 9h 							Kh Qh Jh 0h 9h
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2646,7 +2372,7 @@ As Qd 9h 7c 3d 2s 						As Qd 9h 7c 3d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 7c 3d 			 - 5 cards used for hand: As Qd 9h 7c 3d 
 Hand 2:								Hand 2:
 --------							--------
@@ -2655,7 +2381,7 @@ Js 0c 9s 8d 7c 							Js 0c 9s 8d 7c
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Js 0c 9s 8d 7c 			 - 5 cards used for hand: Js 0c 9s 8d 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2667,7 +2393,7 @@ As Qd 9h 7c 3d 2s 						As Qd 9h 7c 3d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 7c 3d 			 - 5 cards used for hand: As Qd 9h 7c 3d 
 Hand 2:								Hand 2:
 --------							--------
@@ -2675,7 +2401,7 @@ Jc Jd Jh 7c 5h 2c 					      |	Jh Jd Jc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value J)	 - The most of a kind is 3 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh 7c 5h 		      |	 - 5 cards used for hand: Jh Jd Jc 7c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2687,7 +2413,7 @@ As Qd 9h 7c 3d 2s 						As Qd 9h 7c 3d 2s
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: As Qd 9h 7c 3d 			 - 5 cards used for hand: As Qd 9h 7c 3d 
 Hand 2:								Hand 2:
 --------							--------
@@ -2695,7 +2421,7 @@ Ad Ah Kd Ks 3h 						      |	Ah Ad Ks Kd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Kd Ks 3h 		      |	 - 5 cards used for hand: Ah Ad Ks Kd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2707,7 +2433,7 @@ Ac As Kh 9d 8c 3h 					      |	As Ac Kh 9d 8c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ac As Kh 9d 8c 		      |	 - 5 cards used for hand: As Ac Kh 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2716,7 +2442,7 @@ As Ks Qc Js 0s 3s 						As Ks Qc Js 0s 3s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Ks Js 0s 3s 			 - 5 cards used for hand: As Ks Js 0s 3s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2728,7 +2454,7 @@ Ac As Kh 9d 8c 3h 					      |	As Ac Kh 9d 8c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ac As Kh 9d 8c 		      |	 - 5 cards used for hand: As Ac Kh 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2736,7 +2462,7 @@ Kc Kd Kh Ks 8c 6d 					      |	Ks Kh Kd Kc 8c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2748,7 +2474,7 @@ Ac As Kh 9d 8c 3h 					      |	As Ac Kh 9d 8c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ac As Kh 9d 8c 		      |	 - 5 cards used for hand: As Ac Kh 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2756,7 +2482,7 @@ Kd Kh Ks 9h 7c 7h 2h 					      |	Ks Kh Kd 9h 7h 7c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2768,7 +2494,7 @@ Ac As Kh 9d 8c 3h 					      |	As Ac Kh 9d 8c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ac As Kh 9d 8c 		      |	 - 5 cards used for hand: As Ac Kh 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2776,7 +2502,7 @@ Kc Js 7h 6c 4d 2h 						Kc Js 7h 6c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kc Js 7h 6c 4d 			 - 5 cards used for hand: Kc Js 7h 6c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2788,7 +2514,7 @@ Ac As Kh 9d 8c 3h 					      |	As Ac Kh 9d 8c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ac As Kh 9d 8c 		      |	 - 5 cards used for hand: As Ac Kh 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2797,7 +2523,7 @@ Kh Qh Jh 0h 9h 							Kh Qh Jh 0h 9h
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2809,7 +2535,7 @@ Ac As Kh 9d 8c 3h 					      |	As Ac Kh 9d 8c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ac As Kh 9d 8c 		      |	 - 5 cards used for hand: As Ac Kh 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2818,7 +2544,7 @@ Js 0c 9s 8d 7c 							Js 0c 9s 8d 7c
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Js 0c 9s 8d 7c 			 - 5 cards used for hand: Js 0c 9s 8d 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2830,7 +2556,7 @@ Ac As Kh 9d 8c 3h 					      |	As Ac Kh 9d 8c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ac As Kh 9d 8c 		      |	 - 5 cards used for hand: As Ac Kh 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2838,7 +2564,7 @@ Jc Jd Jh 7c 5h 2c 					      |	Jh Jd Jc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value J)	 - The most of a kind is 3 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh 7c 5h 		      |	 - 5 cards used for hand: Jh Jd Jc 7c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2850,7 +2576,7 @@ Ac As Kh 9d 8c 3h 					      |	As Ac Kh 9d 8c 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Ac As Kh 9d 8c 		      |	 - 5 cards used for hand: As Ac Kh 9d 8c 
 Hand 2:								Hand 2:
 --------							--------
@@ -2858,7 +2584,7 @@ Ad Ah Kd Ks 3h 						      |	Ah Ad Ks Kd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Kd Ks 3h 		      |	 - 5 cards used for hand: Ah Ad Ks Kd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2871,7 +2597,7 @@ As Ks Qs Js 0s 							As Ks Qs Js 0s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2880,7 +2606,7 @@ As Ks Qc Js 0s 3s 						As Ks Qc Js 0s 3s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Ks Js 0s 3s 			 - 5 cards used for hand: As Ks Js 0s 3s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2893,7 +2619,7 @@ As Ks Qs Js 0s 							As Ks Qs Js 0s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2901,7 +2627,7 @@ Kc Kd Kh Ks 8c 6d 					      |	Ks Kh Kd Kc 8c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2914,7 +2640,7 @@ As Ks Qs Js 0s 							As Ks Qs Js 0s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2922,7 +2648,7 @@ Kd Kh Ks 9h 7c 7h 2h 					      |	Ks Kh Kd 9h 7h 7c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2935,7 +2661,7 @@ As Ks Qs Js 0s 							As Ks Qs Js 0s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2943,7 +2669,7 @@ Kc Js 7h 6c 4d 2h 						Kc Js 7h 6c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kc Js 7h 6c 4d 			 - 5 cards used for hand: Kc Js 7h 6c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2956,7 +2682,7 @@ As Ks Qs Js 0s 							As Ks Qs Js 0s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2964,7 +2690,7 @@ Kc Ks Js 9h 2c 						      |	Ks Kc Js 9h 2c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Kc Ks Js 9h 2c 		      |	 - 5 cards used for hand: Ks Kc Js 9h 2c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2977,7 +2703,7 @@ As Ks Qs Js 0s 							As Ks Qs Js 0s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -2986,7 +2712,7 @@ Js 0c 9s 8d 7c 							Js 0c 9s 8d 7c
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Js 0c 9s 8d 7c 			 - 5 cards used for hand: Js 0c 9s 8d 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -2999,7 +2725,7 @@ As Ks Qs Js 0s 							As Ks Qs Js 0s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -3007,7 +2733,7 @@ Jc Jd Jh 7c 5h 2c 					      |	Jh Jd Jc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value J)	 - The most of a kind is 3 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh 7c 5h 		      |	 - 5 cards used for hand: Jh Jd Jc 7c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3020,7 +2746,7 @@ As Ks Qs Js 0s 							As Ks Qs Js 0s
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: As Ks Qs Js 0s 			 - 5 cards used for hand: As Ks Qs Js 0s 
 Hand 2:								Hand 2:
 --------							--------
@@ -3028,7 +2754,7 @@ Ad Ah Kd Ks 3h 						      |	Ah Ad Ks Kd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Kd Ks 3h 		      |	 - 5 cards used for hand: Ah Ad Ks Kd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3041,7 +2767,7 @@ Hand 1:								Hand 1:
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value 0)	 - The most of a kind is 1 of a kind (at index 0 / value 0)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 0s 9s 8c 7h 6d 			 - 5 cards used for hand: 0s 9s 8c 7h 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3050,7 +2776,7 @@ As Ks Qc Js 0s 3s 						As Ks Qc Js 0s 3s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Ks Js 0s 3s 			 - 5 cards used for hand: As Ks Js 0s 3s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3063,7 +2789,7 @@ Hand 1:								Hand 1:
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value 0)	 - The most of a kind is 1 of a kind (at index 0 / value 0)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 0s 9s 8c 7h 6d 			 - 5 cards used for hand: 0s 9s 8c 7h 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3071,7 +2797,7 @@ Kc Kd Kh Ks 8c 6d 					      |	Ks Kh Kd Kc 8c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3084,7 +2810,7 @@ Hand 1:								Hand 1:
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value 0)	 - The most of a kind is 1 of a kind (at index 0 / value 0)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 0s 9s 8c 7h 6d 			 - 5 cards used for hand: 0s 9s 8c 7h 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3092,7 +2818,7 @@ Kd Kh Ks 9h 7c 7h 2h 					      |	Ks Kh Kd 9h 7h 7c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3105,7 +2831,7 @@ Hand 1:								Hand 1:
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value 0)	 - The most of a kind is 1 of a kind (at index 0 / value 0)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 0s 9s 8c 7h 6d 			 - 5 cards used for hand: 0s 9s 8c 7h 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3113,7 +2839,7 @@ Kc Js 7h 6c 4d 2h 						Kc Js 7h 6c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kc Js 7h 6c 4d 			 - 5 cards used for hand: Kc Js 7h 6c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3126,7 +2852,7 @@ Hand 1:								Hand 1:
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value 0)	 - The most of a kind is 1 of a kind (at index 0 / value 0)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 0s 9s 8c 7h 6d 			 - 5 cards used for hand: 0s 9s 8c 7h 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3134,7 +2860,7 @@ Kc Ks Js 9h 2c 						      |	Ks Kc Js 9h 2c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Kc Ks Js 9h 2c 		      |	 - 5 cards used for hand: Ks Kc Js 9h 2c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3147,7 +2873,7 @@ Hand 1:								Hand 1:
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value 0)	 - The most of a kind is 1 of a kind (at index 0 / value 0)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 0s 9s 8c 7h 6d 			 - 5 cards used for hand: 0s 9s 8c 7h 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3156,7 +2882,7 @@ Kh Qh Jh 0h 9h 							Kh Qh Jh 0h 9h
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3169,7 +2895,7 @@ Hand 1:								Hand 1:
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value 0)	 - The most of a kind is 1 of a kind (at index 0 / value 0)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 0s 9s 8c 7h 6d 			 - 5 cards used for hand: 0s 9s 8c 7h 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3177,7 +2903,7 @@ Jc Jd Jh 7c 5h 2c 					      |	Jh Jd Jc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value J)	 - The most of a kind is 3 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh 7c 5h 		      |	 - 5 cards used for hand: Jh Jd Jc 7c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3190,7 +2916,7 @@ Hand 1:								Hand 1:
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value 0)	 - The most of a kind is 1 of a kind (at index 0 / value 0)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: 0s 9s 8c 7h 6d 			 - 5 cards used for hand: 0s 9s 8c 7h 6d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3198,7 +2924,7 @@ Ad Ah Kd Ks 3h 						      |	Ah Ad Ks Kd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Kd Ks 3h 		      |	 - 5 cards used for hand: Ah Ad Ks Kd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3210,7 +2936,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -3219,7 +2945,7 @@ As Ks Qc Js 0s 3s 						As Ks Qc Js 0s 3s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Ks Js 0s 3s 			 - 5 cards used for hand: As Ks Js 0s 3s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3231,7 +2957,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -3239,7 +2965,7 @@ Kc Kd Kh Ks 8c 6d 					      |	Ks Kh Kd Kc 8c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3251,7 +2977,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -3259,7 +2985,7 @@ Kd Kh Ks 9h 7c 7h 2h 					      |	Ks Kh Kd 9h 7h 7c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3271,7 +2997,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -3279,7 +3005,7 @@ Kc Js 7h 6c 4d 2h 						Kc Js 7h 6c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kc Js 7h 6c 4d 			 - 5 cards used for hand: Kc Js 7h 6c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3291,7 +3017,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -3299,7 +3025,7 @@ Kc Ks Js 9h 2c 						      |	Ks Kc Js 9h 2c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Kc Ks Js 9h 2c 		      |	 - 5 cards used for hand: Ks Kc Js 9h 2c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3311,7 +3037,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -3320,7 +3046,7 @@ Kh Qh Jh 0h 9h 							Kh Qh Jh 0h 9h
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3332,7 +3058,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -3341,7 +3067,7 @@ Js 0c 9s 8d 7c 							Js 0c 9s 8d 7c
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Js 0c 9s 8d 7c 			 - 5 cards used for hand: Js 0c 9s 8d 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3353,7 +3079,7 @@ Qc Qd Qh 7c 5h 2c 					      |	Qh Qd Qc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value Q)	 - The most of a kind is 3 of a kind (at index 0 / value Q)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Qc Qd Qh 7c 5h 		      |	 - 5 cards used for hand: Qh Qd Qc 7c 5h 
 Hand 2:								Hand 2:
 --------							--------
@@ -3361,7 +3087,7 @@ Ad Ah Kd Ks 3h 						      |	Ah Ad Ks Kd 3h
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ad Ah Kd Ks 3h 		      |	 - 5 cards used for hand: Ah Ad Ks Kd 3h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3373,7 +3099,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3382,7 +3108,7 @@ As Ks Qc Js 0s 3s 						As Ks Qc Js 0s 3s
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value A)	 - The most of a kind is 1 of a kind (at index 0 / value A)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FLUSH			      |	In function ranking_to_string, buffer returned is FLUSH - eva
+ - evaluate_hand's ranking: FLUSH				 - evaluate_hand's ranking: FLUSH
  - 5 cards used for hand: As Ks Js 0s 3s 			 - 5 cards used for hand: As Ks Js 0s 3s 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3394,7 +3120,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3402,7 +3128,7 @@ Kc Kd Kh Ks 8c 6d 					      |	Ks Kh Kd Kc 8c 6d
  - No flush							 - No flush
  - The most of a kind is 4 of a kind (at index 0 / value K)	 - The most of a kind is 4 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: FOUR_OF_A_KIND		      |	In function ranking_to_string, buffer returned is FOUR_OF_A_K
+ - evaluate_hand's ranking: FOUR_OF_A_KIND			 - evaluate_hand's ranking: FOUR_OF_A_KIND
  - 5 cards used for hand: Kc Kd Kh Ks 8c 		      |	 - 5 cards used for hand: Ks Kh Kd Kc 8c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3414,7 +3140,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3422,7 +3148,7 @@ Kd Kh Ks 9h 7c 7h 2h 					      |	Ks Kh Kd 9h 7h 7c 2h
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value K)	 - The most of a kind is 3 of a kind (at index 0 / value K)
  - Secondary pair at index 4 (value 7)				 - Secondary pair at index 4 (value 7)
- - evaluate_hand's ranking: FULL_HOUSE			      |	In function ranking_to_string, buffer returned is FULL_HOUSE 
+ - evaluate_hand's ranking: FULL_HOUSE				 - evaluate_hand's ranking: FULL_HOUSE
  - 5 cards used for hand: Kd Kh Ks 7c 7h 		      |	 - 5 cards used for hand: Ks Kh Kd 7h 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3434,7 +3160,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3442,7 +3168,7 @@ Kc Js 7h 6c 4d 2h 						Kc Js 7h 6c 4d 2h
  - No flush							 - No flush
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: NOTHING			      |	In function ranking_to_string, buffer returned is NOTHING - e
+ - evaluate_hand's ranking: NOTHING				 - evaluate_hand's ranking: NOTHING
  - 5 cards used for hand: Kc Js 7h 6c 4d 			 - 5 cards used for hand: Kc Js 7h 6c 4d 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3454,7 +3180,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3462,7 +3188,7 @@ Kc Ks Js 9h 2c 						      |	Ks Kc Js 9h 2c
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value K)	 - The most of a kind is 2 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: PAIR			      |	In function ranking_to_string, buffer returned is PAIR - eval
+ - evaluate_hand's ranking: PAIR				 - evaluate_hand's ranking: PAIR
  - 5 cards used for hand: Kc Ks Js 9h 2c 		      |	 - 5 cards used for hand: Ks Kc Js 9h 2c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3474,7 +3200,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3483,7 +3209,7 @@ Kh Qh Jh 0h 9h 							Kh Qh Jh 0h 9h
  - Straight flush at index 0					 - Straight flush at index 0
  - The most of a kind is 1 of a kind (at index 0 / value K)	 - The most of a kind is 1 of a kind (at index 0 / value K)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT_FLUSH		      |	In function ranking_to_string, buffer returned is STRAIGHT_FL
+ - evaluate_hand's ranking: STRAIGHT_FLUSH			 - evaluate_hand's ranking: STRAIGHT_FLUSH
  - 5 cards used for hand: Kh Qh Jh 0h 9h 			 - 5 cards used for hand: Kh Qh Jh 0h 9h 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3495,7 +3221,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3504,7 +3230,7 @@ Js 0c 9s 8d 7c 							Js 0c 9s 8d 7c
  - Straight at index 0						 - Straight at index 0
  - The most of a kind is 1 of a kind (at index 0 / value J)	 - The most of a kind is 1 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: STRAIGHT			      |	In function ranking_to_string, buffer returned is STRAIGHT - 
+ - evaluate_hand's ranking: STRAIGHT				 - evaluate_hand's ranking: STRAIGHT
  - 5 cards used for hand: Js 0c 9s 8d 7c 			 - 5 cards used for hand: Js 0c 9s 8d 7c 
 Comparison : 							Comparison : 
 --------------							--------------
@@ -3516,7 +3242,7 @@ Ac As Kc Kh 4d 						      |	As Ac Kh Kc 4d
  - No flush							 - No flush
  - The most of a kind is 2 of a kind (at index 0 / value A)	 - The most of a kind is 2 of a kind (at index 0 / value A)
  - Secondary pair at index 2 (value K)				 - Secondary pair at index 2 (value K)
- - evaluate_hand's ranking: TWO_PAIR			      |	In function ranking_to_string, buffer returned is TWO_PAIR - 
+ - evaluate_hand's ranking: TWO_PAIR				 - evaluate_hand's ranking: TWO_PAIR
  - 5 cards used for hand: Ac As Kc Kh 4d 		      |	 - 5 cards used for hand: As Ac Kh Kc 4d 
 Hand 2:								Hand 2:
 --------							--------
@@ -3524,7 +3250,7 @@ Jc Jd Jh 7c 5h 2c 					      |	Jh Jd Jc 7c 5h 2c
  - No flush							 - No flush
  - The most of a kind is 3 of a kind (at index 0 / value J)	 - The most of a kind is 3 of a kind (at index 0 / value J)
  - No secondary pair						 - No secondary pair
- - evaluate_hand's ranking: THREE_OF_A_KIND		      |	In function ranking_to_string, buffer returned is THREE_OF_A_
+ - evaluate_hand's ranking: THREE_OF_A_KIND			 - evaluate_hand's ranking: THREE_OF_A_KIND
  - 5 cards used for hand: Jc Jd Jh 7c 5h 		      |	 - 5 cards used for hand: Jh Jd Jc 7c 5h 
 Comparison : 							Comparison : 
 --------------							--------------
