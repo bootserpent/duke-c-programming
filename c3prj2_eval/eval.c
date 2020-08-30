@@ -10,6 +10,7 @@ typedef SSIZE_T ssize_t;
 
 bool is_ace_low_straight_at(deck_t* hand, size_t index, suit_t fs);
 unsigned* get_match_counts(deck_t* hand);
+void printEvalHand(hand_eval_t handEval);
 
 int card_ptr_comp(const void* vp1, const void* vp2) {
   //trying to make const void* to const card_t* const*
@@ -24,7 +25,7 @@ int card_ptr_comp(const void* vp1, const void* vp2) {
     return c2->value - c1->value;
   }
   else {
-    return c1->suit - c2->suit;
+    return c2->suit - c1->suit;
   }
 
   return 0;
@@ -101,6 +102,7 @@ int is_straight_at(deck_t* hand, size_t index, suit_t fs) {
   if (isAceLowStraight == true) {
     return -1;
   }
+  //size_t ix = index + 1;
   card_t comparisonCard = *(hand->cards)[index];
   for (unsigned i = index + 1; i < hand->n_cards; i++) {
     card_t currentCard = *(hand->cards)[i];
@@ -109,7 +111,7 @@ int is_straight_at(deck_t* hand, size_t index, suit_t fs) {
 	return 0;
       }
     }
-    if (currentCard.value == comparisonCard.value - 1) {
+    if (currentCard.value == comparisonCard.value - 1 && (currentCard.suit == fs || fs == NUM_SUITS)) {
       //increment counter and update comparisonCard
       counter++;
       comparisonCard = currentCard;
@@ -212,6 +214,10 @@ int compare_hands(deck_t* hand1, deck_t* hand2) {
   hand_eval_t evalH1 = evaluate_hand(hand1);
   hand_eval_t evalH2 = evaluate_hand(hand2);
 
+  //printf("\n\nafter evaluation \n");
+  //printEvalHand(evalH1);
+  //printEvalHand(evalH2);
+
   //printf("hand1 ranking = %d, hand2 ranking = %d\n", evalH1.ranking, evalH2.ranking);
   //(c)Check if the rankings in the hand_eval_t are the same
   //or different.If they are different, you can just use
@@ -237,11 +243,11 @@ int compare_hands(deck_t* hand1, deck_t* hand2) {
   //if hand 1 is better, 0 if the hands tie, and a negative number
   //if hand 2 is better.
   for (int i = 0; i < 5; i++) {
-    if (evalH1.cards[i] < evalH2.cards[i]) {
-      return 1;
-    }
-    else if (evalH1.cards[i] > evalH2.cards[i]) {
+    if (evalH1.cards[i]->value < evalH2.cards[i]->value) {
       return -1;
+    }
+    else if (evalH1.cards[i]->value > evalH2.cards[i]->value) {
+      return 1;
     }
   }
   return 0;
@@ -286,7 +292,7 @@ void updateCounts(unsigned* array, int startIndex, int cardCounter) {
 //// write final value into counts
 //updateCounts(counts, startIndex, cardCounter);
 //return counts;
-
+//
 //}
 
 // We provide the below functions.  You do NOT need to modify them
@@ -421,4 +427,13 @@ hand_eval_t evaluate_hand(deck_t* hand) {
     return build_hand_from_match(hand, 2, PAIR, match_idx);
   }
   return build_hand_from_match(hand, 0, NOTHING, 0);
+}
+
+void printEvalHand(hand_eval_t handEval) {
+  const char* ranking = ranking_to_string(handEval.ranking);
+  printf("ranking is %s\n", ranking);
+  for (int i = 0; i < 5; i++) {
+    print_card(*(handEval.cards[i]));
+  }
+  printf("\n");
 }
