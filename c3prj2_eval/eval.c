@@ -124,8 +124,9 @@ int is_straight_at(deck_t* hand, size_t index, suit_t fs) {
 }
 
 bool is_ace_low_straight_at(deck_t* hand, size_t index, suit_t fs) {
+
   card_t card = *(hand->cards)[index];
-  if (card.value != VALUE_ACE || card.suit != fs) {
+  if (card.value != VALUE_ACE || (fs != NUM_SUITS && card.suit != fs)) {
     return false;
   }
   bool detect5 = false;
