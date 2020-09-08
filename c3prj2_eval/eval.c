@@ -99,16 +99,21 @@ int is_straight_at(deck_t* hand, size_t index, suit_t fs) {
   }
   // check whether or not there is an ace low straight
   bool isAceLowStraight = is_ace_low_straight_at(hand, index, fs);
+
   if (isAceLowStraight == true) {
     return -1;
   }
   //size_t ix = index + 1;
   card_t comparisonCard = *(hand->cards)[index];
+  //is the suit of our comparisonCard the same as the fs?
+  if (fs != NUM_SUITS && comparisonCard.suit != fs) {
+    return 0;
+  }
   for (unsigned i = index + 1; i < hand->n_cards; i++) {
     card_t currentCard = *(hand->cards)[i];
     if (fs != NUM_SUITS) {
-      if (currentCard.suit != fs || comparisonCard.suit != fs) {
-	return 0;
+      if (currentCard.suit != fs && fs != NUM_SUITS) {
+	continue;
       }
     }
     if (currentCard.value == comparisonCard.value - 1 && (currentCard.suit == fs || fs == NUM_SUITS)) {
@@ -124,8 +129,7 @@ int is_straight_at(deck_t* hand, size_t index, suit_t fs) {
 }
 
 bool is_ace_low_straight_at(deck_t* hand, size_t index, suit_t fs) {
-
-  card_t card = *(hand->cards)[index];
+  card_t card = *(hand->cards[index]);
   if (card.value != VALUE_ACE || (fs != NUM_SUITS && card.suit != fs)) {
     return false;
   }
@@ -205,19 +209,19 @@ int compare_hands(deck_t* hand1, deck_t* hand2) {
 
   qsort(hand1->cards, hand1->n_cards, sizeof(hand1->cards[0]), card_ptr_comp);
   qsort(hand2->cards, hand2->n_cards, sizeof(hand2->cards[0]), card_ptr_comp);
-  //printf("\n\n... after qsort ...\n");
-  //print_hand(hand1);
-  //printf("\n");
-  //print_hand(hand2);
+  // printf("\n\n... after qsort ...\n");
+  // print_hand(hand1);
+  // printf("\n");
+  // print_hand(hand2);
 
   //(b) Call evaluate_hand on each hand, which gives you a hand_eval_t
   //for each hand.
   hand_eval_t evalH1 = evaluate_hand(hand1);
   hand_eval_t evalH2 = evaluate_hand(hand2);
 
-  //printf("\n\nafter evaluation \n");
-  //printEvalHand(evalH1);
-  //printEvalHand(evalH2);
+  // printf("\n\nafter evaluation \n");
+  // printEvalHand(evalH1);
+  // printEvalHand(evalH2);
 
   //printf("hand1 ranking = %d, hand2 ranking = %d\n", evalH1.ranking, evalH2.ranking);
   //(c)Check if the rankings in the hand_eval_t are the same
@@ -336,6 +340,7 @@ int find_straight(deck_t* hand, suit_t fs, hand_eval_t* ans) {
   }
   for (size_t i = 0; i <= hand->n_cards - 5; i++) {
     int x = is_straight_at(hand, i, fs);
+    // printf("\nis_straight_at i=%ld, fs=%d, result=%d\n", i, fs, x);
     if (x != 0) {
       if (x < 0) { //ace low straight
 	assert(hand->cards[i]->value == VALUE_ACE &&
