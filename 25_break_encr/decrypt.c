@@ -23,24 +23,26 @@ int decrypt(FILE* f) {
   }
   char eEncrypted = getE(freqArray);
   int key = calcKey(eEncrypted);
-  fseek(f, 0, SEEK_SET);
-
-  while((c = fgetc(f)) != EOF) {
-    if (isalpha(c)) {
-      c = tolower(c);
-      c -= 'a';
-      if (c == key) {
-	//
-	c -= key;
-      }
-      else {
-	c = c + (26 - key);
-      }
-      c %= 26;
-      c += 'a';
+  /*
+    fseek(f, 0, SEEK_SET);
+    
+    while((c = fgetc(f)) != EOF) {
+        if (isalpha(c)) {
+            c = tolower(c);
+            c -= 'a';
+            if (c == key) {
+                // 
+                c -= key;
+            }
+            else {
+                c = c + (26 - key);
+            }
+            c %= 26;
+            c += 'a';
+        }
+        // printf("%c", c);
     }
-    // printf("%c", c);
-  }
+  */
   printf("%d\n", key);
   free(freqArray);
   return EXIT_SUCCESS;
@@ -62,9 +64,10 @@ int* countFrequency(FILE* f) {
       c -= 'a';
       freqArray[c]++;
     }
-    if (count > 529000) {
-      break;
-    }
+    /*
+        if (count > 529000) {
+            break;
+	    }*/
   }
   return freqArray;
 }
