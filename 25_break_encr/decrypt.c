@@ -26,6 +26,7 @@ int decrypt(FILE* f) {
   fseek(f, 0, SEEK_SET);
 
   while((c = fgetc(f)) != EOF) {
+    fprintf(stderr, "%c", c);
     if (isalpha(c)) {
       c = tolower(c);
       c -= 'a';
