@@ -4,8 +4,8 @@
 #include <assert.h>
 #pragma warning(disable : 4996)
 
-void testCountFreq();
-void testGetE();
+//void testCountFreq();
+//void testGetE();
 char getE(int* freq);
 int calcKey(char eEncrypted);
 int* countFrequency(FILE* f);
@@ -35,6 +35,7 @@ void decrypt(FILE* f) {
     // printf("%c", c);
   }
   printf("%d\n", key);
+  free(freqArray);
 }
 
 int* countFrequency(FILE* f) {
