@@ -26,7 +26,6 @@ int decrypt(FILE* f) {
   fseek(f, 0, SEEK_SET);
 
   while((c = fgetc(f)) != EOF) {
-    fprintf(stderr, "%c", c);
     if (isalpha(c)) {
       c = tolower(c);
       c -= 'a';
@@ -40,7 +39,7 @@ int decrypt(FILE* f) {
       c %= 26;
       c += 'a';
     }
-    printf("%c", c);
+    // printf("%c", c);
   }
   printf("%d\n", key);
   free(freqArray);
@@ -82,7 +81,7 @@ char getE(int* freq) {
 
 int calcKey(char eEncrypted) {
   int key;
-  if (eEncrypted > 'e') {
+  if (eEncrypted >= 'e') {
     /*
         ex: if 'e' is encrypted as 'i', then all letters
         are shifted down by result of 'i' - 'e'
@@ -127,9 +126,9 @@ int main(int argc, char** argv) {
     perror("Failed to close the input file!");
     return EXIT_FAILURE;
   }
-  fprintf(stderr, "======>>>>> end of the program\n");
   return EXIT_SUCCESS;
 }
+
 
 void testCountFreq() {
   FILE* f = fopen("test.txt", "r");
