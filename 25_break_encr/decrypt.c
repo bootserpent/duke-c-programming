@@ -127,6 +127,7 @@ int main(int argc, char** argv) {
     perror("Failed to close the input file!");
     return EXIT_FAILURE;
   }
+  fprintf(stderr, "======>>>>> end of the program\n");
   return EXIT_SUCCESS;
 }
 
