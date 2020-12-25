@@ -39,7 +39,7 @@ int decrypt(FILE* f) {
       c %= 26;
       c += 'a';
     }
-    // printf("%c", c);
+    printf("%c", c);
   }
   printf("%d\n", key);
   free(freqArray);
