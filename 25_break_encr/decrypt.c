@@ -54,11 +54,16 @@ int* countFrequency(FILE* f) {
     freqArray[i] = 0;
   }
   int c;
+  int count = 0;
   while ((c = fgetc(f)) != EOF) {
+    count++;
     if (isalpha(c)) {
       c = tolower(c);
       c -= 'a';
       freqArray[c]++;
+    }
+    if (count > 529000) {
+      break;
     }
   }
   return freqArray;
