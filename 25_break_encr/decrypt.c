@@ -9,11 +9,18 @@
 char getE(int* freq);
 int calcKey(char eEncrypted);
 int* countFrequency(FILE* f);
+int getMaxFreq(int* freqArray);
 
 //after count frequency & getE, implement decrypt
-void decrypt(FILE* f) {
+int decrypt(FILE* f) {
   int c;
   int* freqArray = countFrequency(f);
+  // checking the max frequency
+  int maxFreq = getMaxFreq(freqArray);
+  if (maxFreq <= 1) {
+    printf("can't discern 'e' because max frequency is less than or equal to 1.\n");
+    return EXIT_FAILURE;
+  }
   char eEncrypted = getE(freqArray);
   int key = calcKey(eEncrypted);
   fseek(f, 0, SEEK_SET);
@@ -36,6 +43,7 @@ void decrypt(FILE* f) {
   }
   printf("%d\n", key);
   free(freqArray);
+  return EXIT_SUCCESS;
 }
 
 int* countFrequency(FILE* f) {
@@ -88,6 +96,16 @@ int calcKey(char eEncrypted) {
     key = 26 + (eEncrypted - 'e');
   }
   return key;
+}
+
+int getMaxFreq(int* freqArray) {
+  int maxFreq = 0;
+  for (int i = 0; i < 26; i++) {
+    if (freqArray[i] > maxFreq) {
+      maxFreq = freqArray[i];
+    }
+  }
+  return maxFreq;
 }
 
 int main(int argc, char** argv) {
