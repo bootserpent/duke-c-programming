@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
+#pragma warning(disable : 4996)
 #define EXIT_SUCCESS 0
-#define EXIT_FAILURE 1
 
 int** getMatrix(FILE* f) {
   //asserting that file is not fake
@@ -26,6 +26,7 @@ int** getMatrix(FILE* f) {
       //newline counted as a character, j = 11 instead of 10
       if (j != 11) {
 	fprintf(stderr, "Line is not the expected size: %d. Should be 10 + newline.\n", j);
+	free(matrix);
 	return NULL;
       }
       i++;
@@ -35,6 +36,7 @@ int** getMatrix(FILE* f) {
   //checking row count, making sure == 10.
   if (i != 10) {
     fprintf(stderr, "Incorrect amount of rows provided: %d. Should be 10 rows.\n", i);
+    free(matrix);
     return NULL;
   }
   //return an array full of values
@@ -54,6 +56,7 @@ int meetRequirements(int** matrix) {
   //make sure the file isn't empty if not null
   if (c == 10) {
     fprintf(stderr, "File is empty or first line is empty. Start matrix at first line. ");
+    free(matrix);
     return EXIT_FAILURE;
   }
   return EXIT_SUCCESS;
