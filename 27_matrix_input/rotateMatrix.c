@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
-#pragma warning(disable : 4996)
 #define EXIT_SUCCESS 0
 
 int** getMatrix(FILE* f) {
