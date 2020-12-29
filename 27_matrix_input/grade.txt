@@ -1,49 +1,9 @@
-Grading at Tue Dec 29 22:25:55 UTC 2020
+Grading at Tue Dec 29 22:35:27 UTC 2020
 Attempting to compile rotateMatrix.c
-testcase1 passed
-#################################################
-testcase2: NonExistentFile
- (should indicate an error)
-testcase2 passed
-#################################################
-testcase3: blank.txt
- (should indicate an error)
-testcase3 passed
-#################################################
-testcase4: short-line.txt
- (should indicate an error)
-valgrind reported memory errors
-#################################################
-testcase5: short-file.txt
- (should indicate an error)
-valgrind reported memory errors
-#################################################
-testcase6: long-line.txt
- (should indicate an error)
-valgrind reported memory errors
-#################################################
-testcase7: long-file.txt
- (should indicate an error)
-valgrind reported memory errors
-#################################################
-testcase8: long-line-2.txt
- (should indicate an error)
-valgrind reported memory errors
-#################################################
-testcase9: normal1.txt normal2.txt
- (should indicate an error)
-testcase9 passed
-#################################################
-testcase10: normal1.txt
-valgrind reported memory errors
-#################################################
-testcase10: normal2.txt
-valgrind reported memory errors
-#################################################
-testcase10: normal3.txt
-valgrind reported memory errors
-#################################################
-testcase10: eof.txt
-valgrind reported memory errors
+rotateMatrix.c:5:0: error: ignoring #pragma warning  [-Werror=unknown-pragmas]
+ #pragma warning(disable : 4996)
+ ^
+cc1: all warnings being treated as errors
+The code did not compile!
 
 Overall Grade: F
