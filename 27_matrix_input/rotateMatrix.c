@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
-#pragma warning(disable : 4996)
 #define EXIT_SUCCESS 0
+#define EXIT_FAILURE 1
 
 int** getMatrix(FILE* f) {
   //asserting that file is not fake
@@ -42,7 +42,7 @@ int** getMatrix(FILE* f) {
 }
 
 
-bool meetRequirements(int** matrix) {
+int meetRequirements(int** matrix) {
   int c;
   c = matrix[0][0];
   //check dimensions (line length, line amount) to make sure not in invalid place
@@ -54,9 +54,9 @@ bool meetRequirements(int** matrix) {
   //make sure the file isn't empty if not null
   if (c == 10) {
     fprintf(stderr, "File is empty or first line is empty. Start matrix at first line. ");
-    return false;
+    return EXIT_FAILURE;
   }
-  return true;
+  return EXIT_SUCCESS;
 }
 
 
@@ -91,8 +91,8 @@ int main(int argc, char** argv) {
     fprintf(stderr, "Failed to retrieve matrix or returned NULL.\n");
     return EXIT_FAILURE;
   }
-  bool ret = meetRequirements(matrix);
-  if (ret == false) {
+  int ret = meetRequirements(matrix);
+  if (ret == EXIT_FAILURE) {
     perror("File does not meet requirements");
     return EXIT_FAILURE;
   }
