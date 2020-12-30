@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
+#pragma warning(disable : 4996)
 #define EXIT_SUCCESS 0
 
 void freeMatrix(int** matrix);
@@ -22,8 +23,9 @@ int** getMatrix(FILE* f) {
   int j = 0;
   while ((c = fgetc(f)) != EOF) {
     if (c != '\n') {
-      if (j > 9) {
+      if (j > 9 || i > 9) {
 	fprintf(stderr, "Line is not the expected size: %d. Should be 10 (no newline)\n", j + 1);
+	fprintf(stderr, "Alternatively, your file may be writing outside of the 10 allocated rows because it has too many lines\n");
 	freeMatrix(matrix);
 	return NULL;
       }
