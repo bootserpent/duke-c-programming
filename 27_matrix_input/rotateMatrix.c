@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
-#pragma warning(disable : 4996)
+//#pragma warning(disable : 4996)
 #define EXIT_SUCCESS 0
 
 void freeMatrix(int** matrix);
