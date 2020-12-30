@@ -1,49 +1,20 @@
-Grading at Tue Dec 29 22:36:25 UTC 2020
-Attempting to compile rotateMatrix.c
-testcase1 passed
-#################################################
-testcase2: NonExistentFile
- (should indicate an error)
-testcase2 passed
-#################################################
-testcase3: blank.txt
- (should indicate an error)
-testcase3 passed
-#################################################
-testcase4: short-line.txt
- (should indicate an error)
-valgrind reported memory errors
-#################################################
-testcase5: short-file.txt
- (should indicate an error)
-valgrind reported memory errors
-#################################################
-testcase6: long-line.txt
- (should indicate an error)
-valgrind reported memory errors
-#################################################
-testcase7: long-file.txt
- (should indicate an error)
-valgrind reported memory errors
-#################################################
-testcase8: long-line-2.txt
- (should indicate an error)
-valgrind reported memory errors
-#################################################
-testcase9: normal1.txt normal2.txt
- (should indicate an error)
-testcase9 passed
-#################################################
-testcase10: normal1.txt
-valgrind reported memory errors
-#################################################
-testcase10: normal2.txt
-valgrind reported memory errors
-#################################################
-testcase10: normal3.txt
-valgrind reported memory errors
-#################################################
-testcase10: eof.txt
-valgrind reported memory errors
+Grading at Mon Dec 28 04:51:04 UTC 2020
+Checking rotateMatrix1
+Your tests identified the problem with rotateMatrix1
+Checking rotateMatrix2
+Your tests identified the problem with rotateMatrix2
+Checking rotateMatrix3
+Your tests identified the problem with rotateMatrix3
+Checking rotateMatrix4
+Your tests identified the problem with rotateMatrix4
+Checking rotateMatrix5
+Your tests identified the problem with rotateMatrix5
+Checking rotateMatrix6
+Your tests identified the problem with rotateMatrix6
+Checking rotateMatrix7
+Your tests identified the problem with rotateMatrix7
+Checking rotateMatrix8
+Your tests identified the problem with rotateMatrix8
+Your tests identified problems with all broken programs
 
-Overall Grade: F
+Overall Grade: PASSED
