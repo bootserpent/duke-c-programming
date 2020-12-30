@@ -2,7 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
+#pragma warning(disable : 4996)
 #define EXIT_SUCCESS 0
+
+void freeMatrix(int** matrix);
 
 int** getMatrix(FILE* f) {
   //asserting that file is not fake
@@ -13,19 +16,26 @@ int** getMatrix(FILE* f) {
   for (int i = 0; i < 10; i++) {
     matrix[i] = (int*)malloc(sizeof(int) * 10);
   }
+
   int c;
   // i is rows, j is columns
   int i = 0;
   int j = 0;
   while ((c = fgetc(f)) != EOF) {
-    matrix[i][j] = c;
-    j++;
-
+    if (c != '\n') {
+      if (j > 9) {
+	fprintf(stderr, "Line is not the expected size: %d. Should be 10 (no newline)\n", j + 1);
+	freeMatrix(matrix);
+	return NULL;
+      }
+      matrix[i][j] = c;
+      j++;
+    }
     if (c == '\n') {
-      //newline counted as a character, j = 11 instead of 10
-      if (j != 11) {
-	fprintf(stderr, "Line is not the expected size: %d. Should be 10 + newline.\n", j);
-	free(matrix);
+      //newline not counted as character, columns = 10 instead of 11
+      if (j != 10) {
+	fprintf(stderr, "Line is not the expected size: %d. Should be 10 (no newline)\n", j);
+	freeMatrix(matrix);
 	return NULL;
       }
       i++;
@@ -35,7 +45,7 @@ int** getMatrix(FILE* f) {
   //checking row count, making sure == 10.
   if (i != 10) {
     fprintf(stderr, "Incorrect amount of rows provided: %d. Should be 10 rows.\n", i);
-    free(matrix);
+    freeMatrix(matrix);
     return NULL;
   }
   //return an array full of values
@@ -55,7 +65,7 @@ int meetRequirements(int** matrix) {
   //make sure the file isn't empty if not null
   if (c == 10) {
     fprintf(stderr, "File is empty or first line is empty. Start matrix at first line. ");
-    free(matrix);
+    freeMatrix(matrix);
     return EXIT_FAILURE;
   }
   return EXIT_SUCCESS;
@@ -77,6 +87,18 @@ void rotate(int** matrix) {
   }
 }
 
+void freeMatrix(int** matrix) {
+  if (matrix == NULL) {
+    return;
+  }
+  //frees contents of each line
+  for (int i = 0; i < 10; i++) {
+    free(matrix[i]);
+  }
+  //frees the line slots
+  free(matrix);
+}
+
 int main(int argc, char** argv) {
   if (argc != 2) {
     fprintf(stderr, "Usage: rotateMatrix fileName\n");
@@ -91,11 +113,19 @@ int main(int argc, char** argv) {
   matrix = getMatrix(f);
   if (matrix == NULL) {
     fprintf(stderr, "Failed to retrieve matrix or returned NULL.\n");
+    if (fclose(f) != 0) {
+      perror("Could not close file\n");
+      return EXIT_FAILURE;
+    }
     return EXIT_FAILURE;
   }
   int ret = meetRequirements(matrix);
   if (ret == EXIT_FAILURE) {
     perror("File does not meet requirements");
+    if (fclose(f) != 0) {
+      perror("Could not close file\n");
+      return EXIT_FAILURE;
+    }
     return EXIT_FAILURE;
   }
   rotate(matrix);
@@ -106,12 +136,7 @@ int main(int argc, char** argv) {
     }
     printf("\n");
   }
-  //frees contents of each line
-  //for (int i = 0; i < 10; i++) {
-  //    free(matrix[i]);
-  //}
-  //frees the line slots
-  free(matrix);
+  freeMatrix(matrix);
   if (fclose(f) != 0) {
     perror("Could not close file\n");
     return EXIT_FAILURE;
