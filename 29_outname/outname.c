@@ -5,7 +5,7 @@
 #include "outname.h"
 
 char* computeOutputFileName(const char* inputName) {
-  const char* extension = ".count";
+  const char* extension = ".counts";
   // +1 to make space for '\0'
   size_t sz = strlen(inputName) + strlen(extension) + 1;
   char* outFileName = (char*)malloc (sz * sizeof(char));
@@ -13,7 +13,7 @@ char* computeOutputFileName(const char* inputName) {
     outFileName[i] = '\0';
   }
   strcpy(outFileName, inputName);
-  strcat(outFileName, ".count");
+  strcat(outFileName, extension);
   
   return outFileName;
 }
