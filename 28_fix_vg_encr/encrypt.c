@@ -4,13 +4,17 @@
 #include <string.h>
 
 void encrypt(FILE * f, int key, FILE * outfile){
-  size_t sz = 20;
+  size_t sz = 5;
+  /*
   char * line = (char*) malloc(sizeof(char) * sz + 1);
-  for (int i = 0; i <= 20; i++) {
+  for (int i = 0; i <= sz; i++) {
     line[i] = '\0';
   }
+  */
+  char* line = NULL;
   while (getline(&line,&sz, f) >= 0) {
     char * ptr = line;
+    fprintf(stderr, "%s\n", line);
     while (*ptr != '\0') {
       int c = *ptr;
       if (isalpha(c)) {
