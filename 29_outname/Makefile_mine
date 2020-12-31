@@ -1,0 +1,5 @@
+CFLAGS=-Wall -Werror -std=gnu99 -pedantic -ggdb3
+PROGRAM=outname_test
+
+outname: outname.c 
+	gcc $(CFLAGS) outname.c -o outname
