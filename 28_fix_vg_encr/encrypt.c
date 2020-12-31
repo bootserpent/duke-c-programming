@@ -4,8 +4,11 @@
 #include <string.h>
 
 void encrypt(FILE * f, int key, FILE * outfile){
-  char * line;
-  size_t sz;
+  size_t sz = 20;
+  char * line = (char*) malloc(sizeof(char) * sz + 1);
+  for (int i = 0; i <= 20; i++) {
+    line[i] = '\0';
+  }
   while (getline(&line,&sz, f) >= 0) {
     char * ptr = line;
     while (*ptr != '\0') {
@@ -22,6 +25,7 @@ void encrypt(FILE * f, int key, FILE * outfile){
     }
     fprintf(outfile, "%s", line);
   }
+  free(line);
 }
 
 int main(int argc, char ** argv) {
@@ -45,7 +49,6 @@ int main(int argc, char ** argv) {
   strcat(outFileName, ".enc");
   FILE * outFile = fopen(outFileName, "w");
   free(outFileName);
-  free(outFile);
   encrypt(f,key, outFile);
   if (fclose(outFile) != 0) {
     perror("Failed to close the input file!");
