@@ -158,7 +158,6 @@ int checkWin(board_t* b) {
   for (int ny = 0; ny < b->height; ny++) {
     for (int nx = 0; nx < b->width; nx++) {
       if (b->board[ny][nx] == UNKNOWN) {
-	printf("the square at (%d, %d) is unknown. the game has not been won\n", nx, ny);
 	return 0; // lose
       }
     }
