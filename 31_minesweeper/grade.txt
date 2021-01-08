@@ -1,0 +1,16 @@
+Grading at Fri Jan  8 06:41:11 UTC 2021
+Attempting to compile minesweeper.c
+#################################################
+testcase1:
+valgrind reported memory errors
+#################################################
+testcase2:
+valgrind reported memory errors
+#################################################
+testcase3:
+valgrind reported memory errors
+#################################################
+testcase4:
+valgrind reported memory errors
+
+Overall Grade: F
