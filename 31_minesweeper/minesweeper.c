@@ -116,12 +116,12 @@ int countMines(board_t* b, int x, int y) {
   int mineCount = 0;
   for (int ny = y - 1; ny < y + 2; ny++) {
     //checking if current height/row (y) coordinates exceed upper and lower bounds
-    if (ny > b->height || ny < 0) {
+    if (ny >= b->height || ny < 0) {
       continue;
     }
     for (int nx = x - 1; nx < x + 2; nx++) {
       //checking if current width/column (x) coordinates exceed upper and lower bounds
-      if (nx > b->width || nx < 0) {
+      if (nx >= b->width || nx < 0) {
 	continue;
       }
       //skipping over mine currently checking at [y][x]
