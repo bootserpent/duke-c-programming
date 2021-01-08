@@ -56,6 +56,8 @@ board_t* makeBoard(int w, int h, int numMines) {
       board[y][x] = UNKNOWN;
     }
   }
+  //assigning board array to board_t struct
+  b->board = board;
   //adding mines
   addRandomMine(b);
   return b;
