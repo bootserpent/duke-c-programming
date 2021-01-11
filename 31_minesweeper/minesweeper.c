@@ -59,7 +59,9 @@ board_t* makeBoard(int w, int h, int numMines) {
   //assigning board array to board_t struct
   b->board = board;
   //adding mines
-  addRandomMine(b);
+  for (int i = 0; i < b->totalMines; i++) {
+    addRandomMine(b);
+  }
   return b;
 }
 void printBoard(board_t* b) {
