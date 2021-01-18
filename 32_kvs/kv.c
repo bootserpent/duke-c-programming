@@ -121,7 +121,7 @@ char** getFileLines(FILE* f, int* lineCountPtr) {
 
 
 kvpair_t* findKV(char* lineToRead) {
-  kvpair_t* pair = (kvpair_t*)malloc(sizeof(kvpair_t*));
+  kvpair_t* pair = (kvpair_t*)malloc(sizeof(kvpair_t));
   char* charPtr = strchr(lineToRead, '=');
 
   //if no '=' exists in line, return NULL
@@ -167,7 +167,7 @@ kvarray_t* readKVs(const char* fname) {
   */
 
   int lineCount = 0;
-  kvarray_t* array = (kvarray_t*)malloc(sizeof(kvarray_t*));
+  kvarray_t* array = (kvarray_t*)malloc(sizeof(kvarray_t));
 
   FILE* f;
   if ((f = fopen(fname, "r")) == NULL) {
@@ -187,6 +187,10 @@ kvarray_t* readKVs(const char* fname) {
   }
 
   freeLines(lines, lineCount);
+  if (fclose(f) == EOF) {
+    perror("Failed to close file");
+    return NULL;
+  }
   return array;
 }
 
@@ -199,9 +203,12 @@ void freeKVs(kvarray_t* pairs) {
     }
     free(pair->key);
     free(pair->value);
+    free(pairs->kvPairs[i]);
   }
   //free pairs
   free(pairs->kvPairs);
+  //free kvPairs array and length
+  free(pairs);
 }
 
 void printKVs(kvarray_t* pairs) {
