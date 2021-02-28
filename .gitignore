@@ -1,0 +1,8 @@
+*.ilk
+*Debug
+*.db
+*.vs
+*.vcxproj
+*.sln
+*.filters
+*.user
