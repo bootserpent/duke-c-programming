@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include "kv.h"
-//#pragma warning(disable : 4996)
+#pragma warning(disable : 4996)
 
 //comment out this during PPE
 #include <errno.h>
 #include <stdint.h>
 
 // if typedef doesn't exist (msvc, blah)
-/*
+
 typedef intptr_t ssize_t;
 
 ssize_t getline(char** lineptr, size_t* n, FILE* stream) {
@@ -59,7 +59,7 @@ ssize_t getline(char** lineptr, size_t* n, FILE* stream) {
   (*lineptr)[pos] = '\0';
   return pos;
 }
-*/
+
 
 
 void freeLines(char** lines, int lineCount) {
