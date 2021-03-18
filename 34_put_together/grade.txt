@@ -1,4 +1,4 @@
-Grading at Thu Mar 18 04:35:21 UTC 2021
+Grading at Thu Mar 18 04:39:45 UTC 2021
 Attempting to compile:
 rm -f  outname.o  counts.o  main.o  kv.o count_values *~
 gcc -c -Wall -Werror -std=gnu99 -pedantic -ggdb3 outname.c
@@ -8,9 +8,21 @@ gcc -c -Wall -Werror -std=gnu99 -pedantic -ggdb3 kv.c
 gcc -Wall -Werror -std=gnu99 -pedantic -ggdb3 -o count_values  outname.o  counts.o  main.o  kv.o
 #################################################
 testcase1:
+total arguments: 1
+./count_values
 valgrind reported memory errors
 #################################################
 testcase2:
+total arguments: 4
+./count_values
+temp.txt
+62list1a.txt
+62list1b.txt
+total arguments: 4
+./count_values
+temp.txt
+62list1a.txt
+62list1b.txt
 Your file matched the expected output
 Comparing file list1a.txt.counts with answer
 Your output is correct
@@ -21,6 +33,18 @@ Your output is correct
 valgrind was clean
 #################################################
 testcase3:
+total arguments: 5
+./count_values
+temp.txt
+62list2a.txt
+62list2b.txt
+62list2c.txt
+total arguments: 5
+./count_values
+temp.txt
+62list2a.txt
+62list2b.txt
+62list2c.txt
 Your file matched the expected output
 Comparing file list2a.txt.counts with answer
 Your output is correct
@@ -34,6 +58,14 @@ Your output is correct
 valgrind was clean
 #################################################
 testcase4:
+total arguments: 3
+./count_values
+temp.txt
+62list3a.txt
+total arguments: 3
+./count_values
+temp.txt
+62list3a.txt
 Your file matched the expected output
 Comparing file list3a.txt.counts with answer
 Your output is correct
