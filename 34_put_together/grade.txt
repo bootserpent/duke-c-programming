@@ -1,7 +1,0 @@
-Grading at Thu Mar 18 01:27:56 UTC 2021
-Attempting to compile:
-rm -f  outname.o  main_bak.o  counts.o  main.o  kv.o count_values *~
-make: *** No rule to make target 'outname.h', needed by 'outname.o'.  Stop.
-The code did not compile! Please try git add . to push all files in your working directory 
-
-Overall Grade: F
