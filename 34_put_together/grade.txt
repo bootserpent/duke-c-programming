@@ -1,0 +1,14 @@
+Grading at Thu Mar 18 04:32:55 UTC 2021
+Attempting to compile:
+rm -f  outname.o  counts.o  main.o  kv.o count_values *~
+gcc -c -Wall -Werror -std=gnu99 -pedantic -ggdb3 outname.c
+gcc -c -Wall -Werror -std=gnu99 -pedantic -ggdb3 counts.c
+counts.c:5:0: error: ignoring #pragma warning  [-Werror=unknown-pragmas]
+ #pragma warning(disable : 4996)
+ ^
+cc1: all warnings being treated as errors
+Makefile:10: recipe for target 'counts.o' failed
+make: *** [counts.o] Error 1
+The code did not compile! Please try git add . to push all files in your working directory 
+
+Overall Grade: F
