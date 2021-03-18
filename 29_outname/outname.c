@@ -3,7 +3,6 @@
 #include <string.h>
 #include <ctype.h>
 #include "outname.h"
-#pragma warning(disable : 4996)
 
 char* computeOutputFileName(const char* inputName) {
   const char* extension = ".counts";

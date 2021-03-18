@@ -6,7 +6,6 @@
 #define MAX_BUFFER_SIZE 10
 #define NOT_FOUND 0
 
-//allocate memory to initialize a pointer to a counts_t struct
 counts_t* createCounts(void) {
 	counts_t* counts = (counts_t*)malloc(sizeof(counts_t));
 
@@ -18,8 +17,6 @@ counts_t* createCounts(void) {
 	return counts;
 }
 
-//put "name" to counts_t
-//uses the name to count the total amount of times it has been seen
 void addCount(counts_t* c, const char* name) {
 	if (name == NULL) {
 		c->unknownCount++;
@@ -57,8 +54,6 @@ void addCount(counts_t* c, const char* name) {
 	c->itemCount++;
 }
 
-//store counts_t content to a file
-//produce formatted output file with all values and keys
 void printCounts(counts_t* c, FILE* outFile) {
 
 	for (int i = 0; i < c->itemCount; i++) {
@@ -70,7 +65,6 @@ void printCounts(counts_t* c, FILE* outFile) {
 	}
 }
 
-//free memory
 void freeCounts(counts_t* c) {
 	//free name in each slot of c->countArray
 	for (int i = 0; i < c->itemCount; i++) {
