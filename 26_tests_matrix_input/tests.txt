@@ -1,0 +1,12 @@
+char255.txt
+linetoolong.txt
+notenoughlines.txt
+test2file.txt
+valid.txt
+fakefile.txt
+
+empty.txt
+valid.txt char255.txt
+linetooshort.txt
+unsigned255.txt
+toomanylines.txt 
