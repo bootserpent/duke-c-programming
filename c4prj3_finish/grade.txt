@@ -1,0 +1,25 @@
+Grading at Fri 31 Dec 2021 06:22:11 AM UTC
+Running 'make clean' to do a clean build of your project
+rm -rf *.o poker *~
+Running 'make poker OTHERFLAGS=-O3' to build your project
+gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3   -c -o cards.o cards.c
+cards.c: In function ‘ranking_to_string’:
+cards.c:55:12: error: function returns address of local variable [-Werror=return-local-addr]
+   55 |     return bufferptr;
+      |            ^~~~~~~~~
+cards.c:18:10: note: declared here
+   18 |     char buffer[30];
+      |          ^~~~~~
+cards.c: In function ‘suit_letter’:
+cards.c:106:12: error: ‘x’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  106 |     return x;
+      |            ^
+cards.c: In function ‘print_card’:
+cards.c:112:5: error: ‘x’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  112 |     printf("%c%c", vl, sl);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+make: *** [<builtin>: cards.o] Error 1
+make failed
+
+Overall Grade: F
