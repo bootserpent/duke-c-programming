@@ -76,6 +76,28 @@ void freeLines(char** lines, int lineCount) {
 	}
 	free(lines);
 }
+void trimTrailing(char* str)
+{
+	int index, i;
+
+	/* Set default index */
+	index = -1;
+
+	/* Find last index of non-white space character */
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
+		{
+			index = i;
+		}
+
+		i++;
+	}
+
+	/* Mark next character to last non-white space character as NULL */
+	str[index + 1] = '\0';
+}
 
 char** getFileLines(FILE* f, int* lineCountPtr) {
 	int bufferSize = 10;
@@ -114,6 +136,8 @@ char** getFileLines(FILE* f, int* lineCountPtr) {
 		if (nlChar != NULL) {
 			*nlChar = '\0';
 		}
+		// trim whitespace at the end of string
+		trimTrailing(line);
 		strcpy(lines[lineCount], line);
 		//as long as we're in the while loop, we were able to fetch '\n', incrementing lineCount
 		lineCount++;
