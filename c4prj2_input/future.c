@@ -4,20 +4,19 @@
 #include <string.h>
 #include "future.h"
 #include "deck.h"
-#define EXIT_FAILURE 1
 
 void add_future_card(future_cards_t * fc, size_t index, card_t * ptr) {
 	
 	//is fc NULL?
 	if (fc == NULL) {
 		fprintf(stderr, "Expected fc not to be NULL.\n");
-		return EXIT_FAILURE;
+		return;
 	}
 	
 	//is ptr valid?
 	if (ptr == NULL) {
 		fprintf(stderr, "Provided card pointer not valid.\n");
-		return EXIT_FAILURE;
+		return;
 	}
 	
 	//allocate for index # of decks
@@ -28,7 +27,7 @@ void add_future_card(future_cards_t * fc, size_t index, card_t * ptr) {
 		}
 		else {
 			fprintf(stderr, "fc decks realloc failed!\n");
-			return EXIT_FAILURE;
+			return;
 		}
 		//set all decks' cards to NULL for error handling
 		for (int i = fc->n_decks; i < index + 1; i++) {
@@ -46,7 +45,7 @@ void add_future_card(future_cards_t * fc, size_t index, card_t * ptr) {
 	}
 	else {
 		fprintf(stderr, "deck card realloc failed!\n");
-		return EXIT_FAILURE;
+		return;
 	}
 
 	//we can do this because n_cards was set to zero
@@ -76,13 +75,13 @@ void future_cards_from_deck(deck_t* deck, future_cards_t* fc) {
 
 	if (deck == NULL) {
 		fprintf(stderr, "provided deck is NULL, no cards to draw from\n");
-		return EXIT_FAILURE;
+		return;
 	}
 
 	//handle NULL fc
 	if (fc == NULL) {
 		fprintf(stderr, "provided fc is NULL or no work to do\n");
-		return EXIT_FAILURE;
+		return;
 	}
 
 	for (int i = 0; i < fc->n_decks; i++) {
