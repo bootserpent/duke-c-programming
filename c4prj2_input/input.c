@@ -1,4 +1,8 @@
-#include <stdlib.h>
+//#define _CRTDBG_MAP_ALLOC
+//#include <stdlib.h>
+//#include <crtdbg.h>
+//comment above during ppe
+//#include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
@@ -12,55 +16,55 @@
 //#include <stdint.h>
 
 // if typedef doesn't exist (msvc, blah)
-/*typedef intptr_t ssize_t;
-
-ssize_t getline(char** lineptr, size_t* n, FILE* stream) {
-	size_t pos;
-	int c;
-
-	if (lineptr == NULL || stream == NULL || n == NULL) {
-		errno = EINVAL;
-		return -1;
-	}
-
-	c = getc(stream);
-	if (c == EOF) {
-		return -1;
-	}
-
-	if (*lineptr == NULL) {
-		*lineptr = (char*)malloc(128);
-		if (*lineptr == NULL) {
-			return -1;
-		}
-		*n = 128;
-	}
-
-	pos = 0;
-	while (c != EOF) {
-		if (pos + 1 >= *n) {
-			size_t new_size = *n + (*n >> 2);
-			if (new_size < 128) {
-				new_size = 128;
-			}
-			char* new_ptr = (char*)realloc(*lineptr, new_size);
-			if (new_ptr == NULL) {
-				return -1;
-			}
-			*n = new_size;
-			*lineptr = new_ptr;
-		}
-
-		((unsigned char*)(*lineptr))[pos++] = c;
-		if (c == '\n') {
-			break;
-		}
-		c = getc(stream);
-	}
-
-	(*lineptr)[pos] = '\0';
-	return pos;
-	}*/
+//typedef intptr_t ssize_t;
+//
+//ssize_t getline(char** lineptr, size_t* n, FILE* stream) {
+//	size_t pos;
+//	int c;
+//
+//	if (lineptr == NULL || stream == NULL || n == NULL) {
+//		errno = EINVAL;
+//		return -1;
+//	}
+//
+//	c = getc(stream);
+//	if (c == EOF) {
+//		return -1;
+//	}
+//
+//	if (*lineptr == NULL) {
+//		*lineptr = (char*)malloc(128);
+//		if (*lineptr == NULL) {
+//			return -1;
+//		}
+//		*n = 128;
+//	}
+//
+//	pos = 0;
+//	while (c != EOF) {
+//		if (pos + 1 >= *n) {
+//			size_t new_size = *n + (*n >> 2);
+//			if (new_size < 128) {
+//				new_size = 128;
+//			}
+//			char* new_ptr = (char*)realloc(*lineptr, new_size);
+//			if (new_ptr == NULL) {
+//				return -1;
+//			}
+//			*n = new_size;
+//			*lineptr = new_ptr;
+//		}
+//
+//		((unsigned char*)(*lineptr))[pos++] = c;
+//		if (c == '\n') {
+//			break;
+//		}
+//		c = getc(stream);
+//	}
+//
+//	(*lineptr)[pos] = '\0';
+//	return pos;
+//	}
 
 void freeLines(char** lines, int lineCount) {
 	if (lines == NULL) {
@@ -122,57 +126,57 @@ char** getFileLines(FILE* f, int* lineCountPtr) {
 }
 
 deck_t* hand_from_string(const char* str, future_cards_t* fc) {
-	//"3c 4c ?0 ?1 ?2\0"
+	// "3c 4c ?0 ?1 ?2\0"
+	// "?7 ?8 ?9 ?10 ?11 ?0 As\0" <-- tricky test case
 
 	int stringLen = strlen(str) + 1;
-	/*int spaceCount = 0;
-	int cardCount = 0;
-	
-
-	for (int i = 0; i < stringLen; i++) {
-		//detect where spaces are
-		if (str[i] == ' ' && i != 0) {
-		//count spaces
-			spaceCount++;
-		}
-	}
-
-	if (str[stringLen - 1] == ' ') {
-		cardCount = spaceCount;
-	}
-	else cardCount = spaceCount + 1;*/
 
 	//allocate hand
 	deck_t* hand = (deck_t*)malloc(sizeof(deck_t));
-	/*hand->cards = (card_t**)malloc(sizeof(card_t*) * cardCount);
-	for (int i = 0; i < cardCount; i++) {
-		hand->cards[i] = (card_t*)malloc(sizeof(card_t));
-		}*/
+
 	hand->cards = NULL;
 	hand->n_cards = 0;
 
-	int lastGapIndex = 0;
-
+	int lastGapIndex = -1;
+	
 	//iterate through string
 	for (int i = 0; i < stringLen; i++) {
+		int isFutureCard = 0;
 		//stop at the space or null terminator
 		if (str[i] == ' ' || str[i] == '\0') {
 			//if the first character is whitespace, do nothing
 			if (i == 0) {
 				continue;
 			}
-
-			if (i - lastGapIndex < 2) {
-				printf("no value or character, not enough characters to make a card\n");
+			
+			// if the space happens at second character, we don't have enough chars to make a card.
+			// or if the gap between two spaces is less than two, we don't have enough chars to make a card. 
+			if (i == 1 || i - lastGapIndex < 2) {
+				fprintf(stderr, "no value or character, not enough characters to make a card\n");
 				return NULL;
 			}
 
 			//if future card (?x) add_empty_card to the deck and update fc
-			if (str[i - 2] == '?') {
-				char indexChar[2] = { str[i - 1], '\0' };
+			for (int j = lastGapIndex; j < i; j++) {
+				if (str[j] == '?') {
+					isFutureCard = 1;
+					break;
+				}
+			}
+
+			if (isFutureCard == 1) {
+				//free indexChar after loop
+				// i - (lastGapIndex + 1) to calculate the space needed to store future card index string number
+				char* indexChar = (char*)malloc(sizeof(char) * (i - (lastGapIndex + 1)));
+				for (int q = 0; q < i - (lastGapIndex + 2); q++) {
+					indexChar[q] = str[lastGapIndex + 2 + q];
+				}
+				indexChar[i - (lastGapIndex + 2)] = '\0';
+
 				int index = atoi(indexChar);
 				card_t* emptyCard = add_empty_card(hand);
 				add_future_card(fc, index, emptyCard);
+				free(indexChar);
 			}	
 
 			//if is regular card, add to hand
@@ -222,11 +226,10 @@ deck_t** read_input(FILE* f, size_t* n_hands, future_cards_t* fc) {
 	int numLines = 0;
 	int numHands = 0;
 	char** lines = getFileLines(f, &numLines);
-	
-	
+
 	//counting actual number of hands
 	for (int i = 0; i < numLines; i++) {
-	  fprintf(stderr, "%s\n", lines[i]);
+		//printf("%s", lines[i]);
 		//"!" operator switches true result to false, or false to true. 
 		//if the line is not empty, it will go into this block
 		if (is_line_empty(lines[i]) != 1) {
@@ -246,6 +249,10 @@ deck_t** read_input(FILE* f, size_t* n_hands, future_cards_t* fc) {
 		}
 
 		hands[currentHand] = hand_from_string(lines[i], fc);
+		if (hands[currentHand] == NULL) {
+			fprintf(stderr, "On line %d, could not make hand out of provided line: %s", currentHand, lines[i]);
+			return NULL;
+		}
 		if (hands[currentHand]->n_cards < 5) {
 			fprintf(stderr, "On line %d: %s\nThere cannot be less than five cards.\n", i + 1, lines[i]);
 			return NULL;
