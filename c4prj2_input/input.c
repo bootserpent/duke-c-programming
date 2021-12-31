@@ -222,9 +222,11 @@ deck_t** read_input(FILE* f, size_t* n_hands, future_cards_t* fc) {
 	int numLines = 0;
 	int numHands = 0;
 	char** lines = getFileLines(f, &numLines);
-
+	
+	
 	//counting actual number of hands
 	for (int i = 0; i < numLines; i++) {
+	  printf("%s", lines[i]);
 		//"!" operator switches true result to false, or false to true. 
 		//if the line is not empty, it will go into this block
 		if (is_line_empty(lines[i]) != 1) {
