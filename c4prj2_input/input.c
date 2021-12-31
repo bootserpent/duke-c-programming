@@ -153,7 +153,7 @@ deck_t* hand_from_string(const char* str, future_cards_t* fc) {
 			// or if the gap between two spaces is less than two, we don't have enough chars to make a card. 
 			if (i == 1 || i - lastGapIndex < 2) {
 				fprintf(stderr, "no value or character, not enough characters to make a card\n");
-				return NULL;
+				//return NULL;
 			}
 
 			//if future card (?x) add_empty_card to the deck and update fc
