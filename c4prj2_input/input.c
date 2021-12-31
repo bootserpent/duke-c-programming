@@ -5,16 +5,14 @@
 #include "input.h"
 #include "future.h"
 #include "deck.h"
-#pragma warning(disable : 4996)
-#define EXIT_SUCCESS 0
-#define EXIT_FAILURE 1
+//#pragma warning(disable : 4996)
 
 //comment out this during PPE
-#include <errno.h>
-#include <stdint.h>
+//#include <errno.h>
+//#include <stdint.h>
 
 // if typedef doesn't exist (msvc, blah)
-typedef intptr_t ssize_t;
+/*typedef intptr_t ssize_t;
 
 ssize_t getline(char** lineptr, size_t* n, FILE* stream) {
 	size_t pos;
@@ -62,7 +60,7 @@ ssize_t getline(char** lineptr, size_t* n, FILE* stream) {
 
 	(*lineptr)[pos] = '\0';
 	return pos;
-}
+	}*/
 
 void freeLines(char** lines, int lineCount) {
 	if (lines == NULL) {
@@ -152,8 +150,6 @@ deck_t* hand_from_string(const char* str, future_cards_t* fc) {
 	}
 	hand->n_cards = 0;
 
-	char value = NULL;
-	char suit = NULL;
 	int lastGapIndex = 0;
 
 	//iterate through string
@@ -192,12 +188,12 @@ deck_t* hand_from_string(const char* str, future_cards_t* fc) {
 	return hand;
 }
 
-bool is_line_empty(char* line) {
-	bool isEmpty = true;
+int is_line_empty(char* line) {
+	int isEmpty = 1;
 	//detect empty space like spaces or '\n'
 	for (int i = 0; i < strlen(line); i++) {
 		if (line[i] != '\0' && line[i] != ' ') {
-			isEmpty = false;
+			isEmpty = 0;
 			break;
 		}
 	}
@@ -208,17 +204,17 @@ deck_t** read_input(FILE* f, size_t* n_hands, future_cards_t* fc) {
 	//error handling
 	if (f == NULL) {
 		fprintf(stderr, "File provided is NULL. Check the inputted filename or use a file that exists.\n");
-		return EXIT_FAILURE;
+		return NULL;
 	}
 
 	if (fc == NULL) {
 		fprintf(stderr, "future_cards_t pointer cannot be NULL.\n");
-		return EXIT_FAILURE;
+		return NULL;
 	}
 
 	if (n_hands == NULL) {
 		fprintf(stderr, "Provided n_hands pointer cannot be NULL.\n");
-		return EXIT_FAILURE;
+		return NULL;
 	}
 
 	//count and report hands read
@@ -230,7 +226,7 @@ deck_t** read_input(FILE* f, size_t* n_hands, future_cards_t* fc) {
 	for (int i = 0; i < numLines; i++) {
 		//"!" operator switches true result to false, or false to true. 
 		//if the line is not empty, it will go into this block
-		if (!is_line_empty(lines[i])) {
+		if (is_line_empty(lines[i]) != 1) {
 			numHands++;
 		}
 	}
@@ -242,14 +238,14 @@ deck_t** read_input(FILE* f, size_t* n_hands, future_cards_t* fc) {
 	deck_t** hands = (deck_t**)malloc(sizeof(deck_t*) * numHands);
 	for (int i = 0; i < numLines; i++) {
 		//printf("%s\n", lines[i]);
-		if (is_line_empty(lines[i])) {
+		if (is_line_empty(lines[i]) == 1) {
 			continue;
 		}
 
 		hands[currentHand] = hand_from_string(lines[i], fc);
 		if (hands[currentHand]->n_cards < 5) {
 			fprintf(stderr, "On line %d: %s\nThere cannot be less than five cards.\n", i + 1, lines[i]);
-			return EXIT_FAILURE;
+			return NULL;
 		}
 		//we don't increment before line 247 because it would check the next hand (doesn't exist yet)
 		currentHand++;
