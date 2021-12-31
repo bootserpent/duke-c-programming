@@ -94,16 +94,9 @@ void future_cards_from_deck(deck_t* deck, future_cards_t* fc) {
 }
 
 void free_future_cards(future_cards_t* fc) {
-	for (int i = 0; i < fc->n_decks; i++) {
-		/*for (int j = 0; j < fc->decks[i].n_cards; j++) {
-			if (fc->decks[i].cards[j] != NULL) {
-				free(&(fc->decks[i].cards[j]));
-				fc->decks[i].cards[j] = NULL;
-			}
-		}*/
-
-		free(&(fc->decks[i]));
-	}
-
-	free(fc);
+  for (int i = 0; i < fc->n_decks; i++) {
+    free(fc->decks[i].cards);
+  }
+  free(fc->decks);
+  free(fc);
 }
