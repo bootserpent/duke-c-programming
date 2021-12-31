@@ -1,65 +1,65 @@
-Grading at Fri 31 Dec 2021 05:22:30 AM UTC
+Grading at Fri 31 Dec 2021 05:42:32 AM UTC
 Compiling cards.c -> cards.o
 Compiling deck.c -> deck.o
 Compiling input.c -> input.o
-input.c:8: error: ignoring #pragma warning  [-Werror=unknown-pragmas]
-    8 | #pragma warning(disable : 4996)
-      | 
-input.c: In function ‘hand_from_string’:
-input.c:155:15: error: initialization of ‘char’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
-  155 |  char value = NULL;
-      |               ^~~~
-input.c:156:14: error: initialization of ‘char’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
-  156 |  char suit = NULL;
-      |              ^~~~
-input.c:156:7: error: unused variable ‘suit’ [-Werror=unused-variable]
-  156 |  char suit = NULL;
-      |       ^~~~
-input.c:155:7: error: unused variable ‘value’ [-Werror=unused-variable]
-  155 |  char value = NULL;
-      |       ^~~~~
-input.c: At top level:
-input.c:195:1: error: unknown type name ‘bool’
-  195 | bool is_line_empty(char* line) {
-      | ^~~~
-input.c: In function ‘is_line_empty’:
-input.c:196:2: error: unknown type name ‘bool’
-  196 |  bool isEmpty = true;
-      |  ^~~~
-input.c:196:17: error: ‘true’ undeclared (first use in this function)
-  196 |  bool isEmpty = true;
-      |                 ^~~~
-input.c:196:17: note: each undeclared identifier is reported only once for each function it appears in
-input.c:200:14: error: ‘false’ undeclared (first use in this function); did you mean ‘fclose’?
-  200 |    isEmpty = false;
-      |              ^~~~~
-      |              fclose
-input.c: In function ‘read_input’:
-input.c:10:22: error: returning ‘int’ from a function with return type ‘deck_t **’ {aka ‘struct deck_tag **’} makes pointer from integer without a cast [-Werror=int-conversion]
-   10 | #define EXIT_FAILURE 1
+Compiling future.c -> future.o
+future.c: In function ‘add_future_card’:
+future.c:7:22: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+    7 | #define EXIT_FAILURE 1
       |                      ^
-input.c:211:10: note: in expansion of macro ‘EXIT_FAILURE’
-  211 |   return EXIT_FAILURE;
+future.c:14:10: note: in expansion of macro ‘EXIT_FAILURE’
+   14 |   return EXIT_FAILURE;
       |          ^~~~~~~~~~~~
-input.c:10:22: error: returning ‘int’ from a function with return type ‘deck_t **’ {aka ‘struct deck_tag **’} makes pointer from integer without a cast [-Werror=int-conversion]
-   10 | #define EXIT_FAILURE 1
+future.c:9:6: note: declared here
+    9 | void add_future_card(future_cards_t * fc, size_t index, card_t * ptr) {
+      |      ^~~~~~~~~~~~~~~
+future.c:7:22: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+    7 | #define EXIT_FAILURE 1
       |                      ^
-input.c:216:10: note: in expansion of macro ‘EXIT_FAILURE’
-  216 |   return EXIT_FAILURE;
+future.c:20:10: note: in expansion of macro ‘EXIT_FAILURE’
+   20 |   return EXIT_FAILURE;
       |          ^~~~~~~~~~~~
-input.c:10:22: error: returning ‘int’ from a function with return type ‘deck_t **’ {aka ‘struct deck_tag **’} makes pointer from integer without a cast [-Werror=int-conversion]
-   10 | #define EXIT_FAILURE 1
+future.c:9:6: note: declared here
+    9 | void add_future_card(future_cards_t * fc, size_t index, card_t * ptr) {
+      |      ^~~~~~~~~~~~~~~
+future.c:7:22: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+    7 | #define EXIT_FAILURE 1
       |                      ^
-input.c:221:10: note: in expansion of macro ‘EXIT_FAILURE’
-  221 |   return EXIT_FAILURE;
-      |          ^~~~~~~~~~~~
-input.c:10:22: error: returning ‘int’ from a function with return type ‘deck_t **’ {aka ‘struct deck_tag **’} makes pointer from integer without a cast [-Werror=int-conversion]
-   10 | #define EXIT_FAILURE 1
-      |                      ^
-input.c:252:11: note: in expansion of macro ‘EXIT_FAILURE’
-  252 |    return EXIT_FAILURE;
+future.c:31:11: note: in expansion of macro ‘EXIT_FAILURE’
+   31 |    return EXIT_FAILURE;
       |           ^~~~~~~~~~~~
+future.c:9:6: note: declared here
+    9 | void add_future_card(future_cards_t * fc, size_t index, card_t * ptr) {
+      |      ^~~~~~~~~~~~~~~
+future.c:7:22: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+    7 | #define EXIT_FAILURE 1
+      |                      ^
+future.c:49:10: note: in expansion of macro ‘EXIT_FAILURE’
+   49 |   return EXIT_FAILURE;
+      |          ^~~~~~~~~~~~
+future.c:9:6: note: declared here
+    9 | void add_future_card(future_cards_t * fc, size_t index, card_t * ptr) {
+      |      ^~~~~~~~~~~~~~~
+future.c: In function ‘future_cards_from_deck’:
+future.c:7:22: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+    7 | #define EXIT_FAILURE 1
+      |                      ^
+future.c:79:10: note: in expansion of macro ‘EXIT_FAILURE’
+   79 |   return EXIT_FAILURE;
+      |          ^~~~~~~~~~~~
+future.c:59:6: note: declared here
+   59 | void future_cards_from_deck(deck_t* deck, future_cards_t* fc) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+future.c:7:22: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+    7 | #define EXIT_FAILURE 1
+      |                      ^
+future.c:85:10: note: in expansion of macro ‘EXIT_FAILURE’
+   85 |   return EXIT_FAILURE;
+      |          ^~~~~~~~~~~~
+future.c:59:6: note: declared here
+   59 | void future_cards_from_deck(deck_t* deck, future_cards_t* fc) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~
 cc1: all warnings being treated as errors
-Compilation of input.c failed
+Compilation of future.c failed
 
 Overall Grade: F
