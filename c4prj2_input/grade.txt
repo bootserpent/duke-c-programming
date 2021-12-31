@@ -1,4 +1,4 @@
-Grading at Fri 31 Dec 2021 08:11:41 PM UTC
+Grading at Fri 31 Dec 2021 08:32:34 PM UTC
 Compiling cards.c -> cards.o
 Compiling deck.c -> deck.o
 Compiling input.c -> input.o
@@ -7,57 +7,60 @@ Linking input.o, future.o deck.o, cards.o, and our tester
 Testing with input file with 
  o 1 hand
  o No unknown/future cards
-Your file matched the expected output
-Test case passed
+Line_1_did_not_match
+Your file did not match the expected ouput
+Test case failed
 Testing with input file with 
  o Many hands
  o No unknown/future cards
-Your file matched the expected output
-Test case passed
+Line_1_did_not_match
+Your file did not match the expected ouput
+Test case failed
 Testing with input file with 
  o Many hands
  o 1 unknown/future cards per hand
-Your file matched the expected output
-Test case passed
+Line_1_did_not_match
+Your file did not match the expected ouput
+Test case failed
 Testing with input file with 
  o Many hands
  o Many unknown/future cards per hand
 Valgrind reported errors:
-==1101== Memcheck, a memory error detector
-==1101== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1101== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==1101== Command: ./tester i1 i2
-==1101== Parent PID: 1100
-==1101== 
-==1101== Invalid read of size 8
-==1101==    at 0x1099FC: read_input (in /graderhome/work/c4prj2_input/tester)
-==1101==    by 0x10AD45: main (in /graderhome/work/c4prj2_input/tester)
-==1101==  Address 0x8 is not stack'd, malloc'd or (recently) free'd
-==1101== 
-==1101== 
-==1101== Process terminating with default action of signal 11 (SIGSEGV): dumping core
-==1101==  Access not within mapped region at address 0x8
-==1101==    at 0x1099FC: read_input (in /graderhome/work/c4prj2_input/tester)
-==1101==    by 0x10AD45: main (in /graderhome/work/c4prj2_input/tester)
-==1101==  If you believe this happened as a result of a stack
-==1101==  overflow in your program's main thread (unlikely but
-==1101==  possible), you can try to increase the size of the
-==1101==  main thread stack using the --main-stacksize= flag.
-==1101==  The main thread stack size used in this run was 8388608.
-==1101== 
-==1101== HEAP SUMMARY:
-==1101==     in use at exit: 1,346 bytes in 45 blocks
-==1101==   total heap usage: 77 allocs, 32 frees, 4,514 bytes allocated
-==1101== 
-==1101== LEAK SUMMARY:
-==1101==    definitely lost: 16 bytes in 1 blocks
-==1101==    indirectly lost: 80 bytes in 4 blocks
-==1101==      possibly lost: 0 bytes in 0 blocks
-==1101==    still reachable: 1,250 bytes in 40 blocks
-==1101==         suppressed: 0 bytes in 0 blocks
-==1101== Rerun with --leak-check=full to see details of leaked memory
-==1101== 
-==1101== For lists of detected and suppressed errors, rerun with: -s
-==1101== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==1272== Memcheck, a memory error detector
+==1272== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1272== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1272== Command: ./tester i1 i2
+==1272== Parent PID: 1271
+==1272== 
+==1272== Invalid read of size 8
+==1272==    at 0x109A27: read_input (in /graderhome/work/c4prj2_input/tester)
+==1272==    by 0x10AD70: main (in /graderhome/work/c4prj2_input/tester)
+==1272==  Address 0x8 is not stack'd, malloc'd or (recently) free'd
+==1272== 
+==1272== 
+==1272== Process terminating with default action of signal 11 (SIGSEGV): dumping core
+==1272==  Access not within mapped region at address 0x8
+==1272==    at 0x109A27: read_input (in /graderhome/work/c4prj2_input/tester)
+==1272==    by 0x10AD70: main (in /graderhome/work/c4prj2_input/tester)
+==1272==  If you believe this happened as a result of a stack
+==1272==  overflow in your program's main thread (unlikely but
+==1272==  possible), you can try to increase the size of the
+==1272==  main thread stack using the --main-stacksize= flag.
+==1272==  The main thread stack size used in this run was 8388608.
+==1272== 
+==1272== HEAP SUMMARY:
+==1272==     in use at exit: 1,346 bytes in 45 blocks
+==1272==   total heap usage: 77 allocs, 32 frees, 4,514 bytes allocated
+==1272== 
+==1272== LEAK SUMMARY:
+==1272==    definitely lost: 16 bytes in 1 blocks
+==1272==    indirectly lost: 80 bytes in 4 blocks
+==1272==      possibly lost: 0 bytes in 0 blocks
+==1272==    still reachable: 1,250 bytes in 40 blocks
+==1272==         suppressed: 0 bytes in 0 blocks
+==1272== Rerun with --leak-check=full to see details of leaked memory
+==1272== 
+==1272== For lists of detected and suppressed errors, rerun with: -s
+==1272== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
 
-Overall Grade: B
+Overall Grade: F
