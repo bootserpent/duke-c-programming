@@ -186,11 +186,8 @@ deck_t* build_remaining_deck(deck_t** hands, size_t n_hands) {
 
 void free_deck(deck_t* deck) {
 	for (unsigned i = 0; i < deck->n_cards; i++) {
-		if (deck->cards[i] != NULL) {
-			free(deck->cards[i]);
-			deck->cards[i] = NULL;
-		}
-		
+	  free(deck->cards[i]);		
 	}
+	free(deck->cards);
 	free(deck);
 }

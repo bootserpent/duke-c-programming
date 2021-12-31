@@ -125,7 +125,7 @@ deck_t* hand_from_string(const char* str, future_cards_t* fc) {
 	//"3c 4c ?0 ?1 ?2\0"
 
 	int stringLen = strlen(str) + 1;
-	int spaceCount = 0;
+	/*int spaceCount = 0;
 	int cardCount = 0;
 	
 
@@ -140,14 +140,15 @@ deck_t* hand_from_string(const char* str, future_cards_t* fc) {
 	if (str[stringLen - 1] == ' ') {
 		cardCount = spaceCount;
 	}
-	else cardCount = spaceCount + 1;
+	else cardCount = spaceCount + 1;*/
 
 	//allocate hand
 	deck_t* hand = (deck_t*)malloc(sizeof(deck_t));
-	hand->cards = (card_t**)malloc(sizeof(card_t*) * cardCount);
+	/*hand->cards = (card_t**)malloc(sizeof(card_t*) * cardCount);
 	for (int i = 0; i < cardCount; i++) {
 		hand->cards[i] = (card_t*)malloc(sizeof(card_t));
-	}
+		}*/
+	hand->cards = NULL;
 	hand->n_cards = 0;
 
 	int lastGapIndex = 0;

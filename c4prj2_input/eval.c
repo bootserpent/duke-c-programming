@@ -307,7 +307,7 @@ void print_game_results(int num_hands, int num_trials, hand_result_t* gameResult
 		//typecast so we can get decimal places in percentage
 		float winPercent = ((float)gameResults[i].wins / (float)num_trials) * 100;
 		// second '%' needed to print as a string, first one escapes format specifier
-		printf("Hand %zu won %u / %u times (%.2f%%)\n", i, gameResults[i].wins, num_trials, winPercent);
+		printf("Hand %d won %u / %u times (%.2f%%)\n", i, gameResults[i].wins, num_trials, winPercent);
 	}
 	printf("And there were %u ties\n", gameResults[0].ties);
 
