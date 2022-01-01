@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "counts.h"
-#pragma warning(disable : 4996)
+//#pragma warning(disable : 4996)
 #define MAX_BUFFER_SIZE 10
 #define NOT_FOUND 0
 
