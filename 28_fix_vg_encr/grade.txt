@@ -1,4 +1,4 @@
-Grading at Thu Dec 31 08:14:43 UTC 2020
+Grading at Sat 01 Jan 2022 01:36:30 AM UTC
 Attempting to compile encrypt.c
 testcase1:
 your output was correct
