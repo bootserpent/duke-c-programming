@@ -181,7 +181,7 @@ deck_t* hand_from_string(const char* str, future_cards_t* fc) {
 			}
 
 			//if future card (?x) add_empty_card to the deck and update fc
-			for (int j = lastGapIndex+1; j < i; j++) {
+			for (int j = lastGapIndex; j < i; j++) {
 				if (str[j] == '?') {
 					isFutureCard = 1;
 					break;
