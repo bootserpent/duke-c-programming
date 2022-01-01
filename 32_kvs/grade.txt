@@ -1,19 +1,9 @@
-Grading at Mon Jan 18 20:49:44 UTC 2021
+Grading at Sat 01 Jan 2022 01:38:57 AM UTC
 Attempting to compile:
-#################################################
-testcase1:
-Your output is correct
-  - Valgrind was clean (no errors, no memory leaks)
-valgrind was clean
-#################################################
-testcase2:
-Your output is correct
-  - Valgrind was clean (no errors, no memory leaks)
-valgrind was clean
-#################################################
-testcase3:
-Your output is correct
-  - Valgrind was clean (no errors, no memory leaks)
-valgrind was clean
+kv.c:5: error: ignoring #pragma warning  [-Werror=unknown-pragmas]
+    5 | #pragma warning(disable : 4996)
+      | 
+cc1: all warnings being treated as errors
+The code did not compile!
 
-Overall Grade: A
+Overall Grade: F
