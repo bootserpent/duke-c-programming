@@ -8,6 +8,7 @@
 
 // compute the counts of values that appear in a particular input file
 counts_t * countFile(const char * filename, kvarray_t * kvPairs) {
+  fprintf(stderr, "%s\n", filename);
     // create pointer counts_t struct
     counts_t* c = createCounts();
 
@@ -27,8 +28,9 @@ counts_t * countFile(const char * filename, kvarray_t * kvPairs) {
         //remove '\n' from each line
         char* nlChar = strchr(name, '\n');
         *nlChar = '\0';
+	fprintf(stderr, "%s\n", name);
         char* value = lookupValue(kvPairs, name);
-        // put value to counts_t 
+	// put value to counts_t 
         addCount(c, value);
     }
     free(name);
