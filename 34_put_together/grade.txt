@@ -1,7 +1,13 @@
-Grading at Sat 01 Jan 2022 01:40:37 AM UTC
+Grading at Sat 01 Jan 2022 01:50:14 AM UTC
 Attempting to compile:
 rm -f  outname.o  counts.o  main.o  kv.o count_values *~
-make: *** No rule to make target 'outname.h', needed by 'outname.o'.  Stop.
+gcc -c -Wall -Werror -std=gnu99 -pedantic -ggdb3 outname.c
+gcc -c -Wall -Werror -std=gnu99 -pedantic -ggdb3 counts.c
+counts.c:5: error: ignoring #pragma warning  [-Werror=unknown-pragmas]
+    5 | #pragma warning(disable : 4996)
+      | 
+cc1: all warnings being treated as errors
+make: *** [Makefile:10: counts.o] Error 1
 The code did not compile! Please try git add . to push all files in your working directory 
 
 Overall Grade: F
