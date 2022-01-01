@@ -55,7 +55,11 @@ for (int i = 1; i < argc; i++){
 fprintf(stderr, "\n\n");
 
   //WRITE ME (plus add appropriate error checking!)
- //read the key/value pairs from the file named by argv[1] (call the result kv)
+ if (argc < 3) {
+   fprintf(stderr, "Not enough input arguments. Usage: $ ./executable kvfile.txt input.txt . . .\n");
+   return EXIT_FAILURE;
+ }
+//read the key/value pairs from the file named by argv[1] (call the result kv)
     kvarray_t* kv = readKVs(argv[1]);
 
  //count from 2 to argc (call the number you count i)

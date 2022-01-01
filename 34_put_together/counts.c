@@ -67,8 +67,8 @@ void printCounts(counts_t* c, FILE* outFile) {
 	}
 
 	if (c->unknownCount > 0) {
-		fprintf(outFile, "<unkown> : %d\n", c->unknownCount);
-		fprintf(stderr, "<unkown> : %d\n", c->unknownCount);
+		fprintf(outFile, "<unknown> : %d\n", c->unknownCount);
+		fprintf(stderr, "<unknown> : %d\n", c->unknownCount);
 	}
 }
 
