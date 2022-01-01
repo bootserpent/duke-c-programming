@@ -48,10 +48,11 @@ counts_t * countFile(const char * filename, kvarray_t * kvPairs) {
 
 
 int main(int argc, char ** argv) {
+fprintf(stderr, "\n=====TEST CASE START ====\n");
   //WRITE ME (plus add appropriate error checking!)
  //read the key/value pairs from the file named by argv[1] (call the result kv)
     kvarray_t* kv = readKVs(argv[1]);
-fprintf(stderr, "=====TEST CASE START ====\n");
+
 for (int i = 1; i < argc; i++){
 	fprintf(stderr, "%s ", argv[i]);
 }	
